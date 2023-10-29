@@ -33,7 +33,7 @@ export default class AboutMe extends Component {
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto"}} id="about">
+            <section style={{width: "90%", margin: "0 auto"}} id="aboutme">
                 <div className="rn-service-area rn-section-gap section-separator" id="features">
                     <div className="container">
                         

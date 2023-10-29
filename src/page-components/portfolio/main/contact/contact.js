@@ -15,7 +15,7 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto"}} id="contact">
+            <section style={{width: "90%", margin: "0 auto"}} id="contactme">
                 <div className="rn-contact-area rn-section-gap section-separator" id="contacts">
                     <div className="container">
                         <div className="row">

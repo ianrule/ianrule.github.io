@@ -29,11 +29,11 @@ export default class SideNav extends Component {
                         <h2 className="sr-only">Main Navigation</h2>
                         <ul className="primary-menu nav nav-pills">
                             <li className="nav-item current"><a className="nav-link smoth-animation-two" href="#home"><i><Icon.Home></Icon.Home></i> Home</a></li>
-                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#about"><i><Icon.User></Icon.User></i> About Me</a></li>
+                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#aboutme"><i><Icon.User></Icon.User></i> About Me</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#resume"><i><Icon.Briefcase></Icon.Briefcase></i> Resume</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#projects"><i><Icon.Layers></Icon.Layers></i> Projects</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#hobbies"><i><Icon.Smile></Icon.Smile></i> Hobbies</a></li>
-                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#contact"><i><Icon.MessageCircle></Icon.MessageCircle></i> Contact</a></li>
+                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#contactme"><i><Icon.MessageCircle></Icon.MessageCircle></i> Contact</a></li>
                         </ul>
                     </nav>
 
