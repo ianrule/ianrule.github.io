@@ -33,12 +33,12 @@ export default class AboutMe extends Component {
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto"}} id="aboutme">
+            <section style={{width: "90%", margin: "0 auto", textAlign: "justify"}} id="aboutme">
                 <div className="rn-service-area rn-section-gap section-separator" id="features">
                     <div className="container">
                         
                         {/* about me reading */}
-                        <div className="row" style={{margin: "0px 38px 0px 38px"}}>
+                        <div className="row" style={{margin: "0px 20px 0px 20px"}}>
                             <div className="col-lg-12">
                                 {/* section title */}
                                 <SectionTitle
@@ -68,7 +68,7 @@ export default class AboutMe extends Component {
                         </div>
 
                         {/* about me cards */}
-                        <div className="row mt--38 mt_md--38 mt_sm--0" style={{margin: "0 38px 0 38px"}}>
+                        <div className="row mt--38 mt_md--38 mt_sm--0" style={{margin: "0 20px 0 20px"}}>
                             <SingleService 
                                 data_aos_delay="100" 
                                 feather_icon={<Icon.HardDrive></Icon.HardDrive>} 

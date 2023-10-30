@@ -29,11 +29,10 @@ export default class Contact extends Component {
                             </div>
                         </div>
 
-                        <div className="row mt--38 mt_md--38 mt_sm--38 mt-contact-sm" style={{width: "90%", margin: "0 auto", padding: "0 38px 0 38px"}}>
+                        <div className="row mt--38 mt_md--38 mt_sm--38 mt-contact-sm" style={{width: "90%", margin: "0 auto", padding: "0 20px 0 20px"}}>
                             <ContactCard
                                 contact_picture="assets/images/slider/profile-pic.png"
                                 title="CS Student at the University of Colorado Boulder"
-                                description="If you have any questions or concerns, feel free to contact me at any time!"
                                 email="rule.ian@gmail.com"
                                 github_link="https://github.com/ianrule"
                                 linkedin_link="https://www.linkedin.com/in/ian-rule/"

@@ -29,7 +29,7 @@ export default class Projects extends Component {
                             </div>
                         </div>
 
-                        <div className="row mt--10 mt_md--10 mt_sm--10" style={{margin: "0 38px 0 38px"}}>
+                        <div className="row mt--10 mt_md--10 mt_sm--10" style={{margin: "0 20px 0 20px"}}>
                             <SinglePortfolio
                                 data_aos_delay="100"
                                 data_bs_target="#modal1"

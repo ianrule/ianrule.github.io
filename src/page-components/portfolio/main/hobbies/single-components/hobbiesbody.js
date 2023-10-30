@@ -14,7 +14,7 @@ export default class HobbiesBody extends Component {
     render() {
         return (
             <div className="pricing-body">
-                <p className="description">
+                <p className="description" style={{textJustify: "center"}}>
                     {this.props.description}
                     {this.props.extra_description}
                     {this.props.read_more_btn}
