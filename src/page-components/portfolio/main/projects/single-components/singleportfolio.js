@@ -13,7 +13,7 @@ export default class SinglePortfolio extends Component {
 
     render() {
         return (
-            <div data-aos="fade-up" data-aos-delay={this.props.data_aos_delay} data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+            <div data-aos="fade-up" data-aos-delay={this.props.data_aos_delay} data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-12 mt--38 mt_md--38 mt_sm--38">
                 <div className="rn-portfolio" data-bs-toggle="modal" data-bs-target={this.props.data_bs_target}>
                     <div className="inner">
                         <div className="thumbnail">

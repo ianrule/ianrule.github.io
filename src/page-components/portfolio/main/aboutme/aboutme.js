@@ -23,10 +23,10 @@ export default class AboutMe extends Component {
         // Change display properties
         if (more_content.style.display === "none") {
             more_content.style.display = "inline";
-            more_button.innerHTML = "Read Less";
+            more_button.innerHTML = "READ LESS";
         } else {
             more_content.style.display = "none";
-            more_button.innerHTML = "Read More";
+            more_button.innerHTML = "READ MORE";
         }
 
     }
@@ -38,7 +38,7 @@ export default class AboutMe extends Component {
                     <div className="container">
                         
                         {/* about me reading */}
-                        <div className="row">
+                        <div className="row" style={{margin: "0px 38px 0px 38px"}}>
                             <div className="col-lg-12">
                                 {/* section title */}
                                 <SectionTitle
@@ -48,7 +48,7 @@ export default class AboutMe extends Component {
                                 </SectionTitle>
                                 
                                 {/* paragraph */}
-                                <p className="description">
+                                <p className="description mt--38">
                                     &emsp;&emsp;Hello! My name is Ian Rule, and I am a fifth-year engineering student at the University of Colorado Boulder. I am currently pursuing a B.S. (Bachelor of Science) in Computer Science in hopes to work in the field of software development. I am very passionate about technological innovation and the problems it can solve, and I love to evolve with new technology. In my free time, I enjoy DJing, mental health advocacy, working out, being outdoors, spending time with family and friends, listening to music, traveling, and taking in all of the knowledge this world has to offer. I am truly blessed to live the life that I do, and I want to leave as positive of an impact as I can on this world.
                                     <span id="aboutMeMoreContent" style={{display: "none"}}>
                                         <br></br>
@@ -61,19 +61,19 @@ export default class AboutMe extends Component {
                                 </p>
 
                                 {/* read more button */}
-                                <div className ="aboutMeBtn" style={{textAlign: "center", paddingBottom: "30px"}}>
-                                    <button type="button" className="rn-btn" id="aboutMeMoreBtn" style={{width: "50%"}} onClick={() => this.expand()}>READ MORE</button>
+                                <div className ="aboutMeBtn mt--38" style={{textAlign: "center"}}>
+                                    <button type="button" className="rn-btn" id="aboutMeMoreBtn" style={{width: "auto"}} onClick={() => this.expand()}>READ MORE</button>
                                 </div>
                             </div>
                         </div>
 
                         {/* about me cards */}
-                        <div className="row row--25 mt_md--10 mt_sm--10">
+                        <div className="row mt--38 mt_md--38 mt_sm--0" style={{margin: "0 38px 0 38px"}}>
                             <SingleService 
                                 data_aos_delay="100" 
                                 feather_icon={<Icon.HardDrive></Icon.HardDrive>} 
                                 title="Software Development" 
-                                description="Pursuing a B.S. in Computer Science at CU Boulder"
+                                description="Check out a few of my projects!"
                                 link="/#projects"
                                 hobby_type="">
                             </SingleService>
@@ -82,7 +82,7 @@ export default class AboutMe extends Component {
                                 data_aos_delay="300" 
                                 feather_icon={<Icon.Headphones></Icon.Headphones>} 
                                 title="DJing" 
-                                description='Performing and releasing mixes under my new alias "Eye Roll"'
+                                description='Learn more about my DJ background!'
                                 link="/#hobbies"
                                 hobby_type="dj">
                             </SingleService>
@@ -90,8 +90,8 @@ export default class AboutMe extends Component {
                             <SingleService 
                                 data_aos_delay="500" 
                                 feather_icon={<Icon.Heart></Icon.Heart>} 
-                                title="Mental Health Advocacy" 
-                                description="Doing my best to leave a positive impact on this world"
+                                title="Mental Wellness" 
+                                description="Learn more about my mental health journey!"
                                 link="/#hobbies"
                                 hobby_type="mh">
                             </SingleService>

@@ -29,8 +29,7 @@ export default class Projects extends Component {
                             </div>
                         </div>
 
-                        <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
-
+                        <div className="row mt--10 mt_md--10 mt_sm--10" style={{margin: "0 38px 0 38px"}}>
                             <SinglePortfolio
                                 data_aos_delay="100"
                                 data_bs_target="#modal1"
@@ -81,52 +80,6 @@ export default class Projects extends Component {
                                 title="Coming Soon"
                                 description="Description coming soon.">
                             </ProjectsModal>
-
-                            <SinglePortfolio
-                                data_aos_delay="100"
-                                data_bs_target="#modal4"
-                                img_src="assets/images/portfolio/portfolio-04.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon">
-                            </SinglePortfolio>
-                            <ProjectsModal
-                                id="modal4"
-                                img_src="assets/images/portfolio/portfolio-04.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon"
-                                description="Description coming soon.">
-                            </ProjectsModal>
-
-                            <SinglePortfolio
-                                data_aos_delay="300"
-                                data_bs_target="#modal5"
-                                img_src="assets/images/portfolio/portfolio-05.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon">
-                            </SinglePortfolio>
-                            <ProjectsModal
-                                id="modal5"
-                                img_src="assets/images/portfolio/portfolio-04.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon"
-                                description="Description coming soon.">
-                            </ProjectsModal>
-
-                            <SinglePortfolio
-                                data_aos_delay="500"
-                                data_bs_target="#modal6"
-                                img_src="assets/images/portfolio/portfolio-06.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon">
-                            </SinglePortfolio>
-                            <ProjectsModal
-                                id="modal6"
-                                img_src="assets/images/portfolio/portfolio-04.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon"
-                                description="Description coming soon.">
-                            </ProjectsModal>
-
                         </div>
                     </div>
                 </div>

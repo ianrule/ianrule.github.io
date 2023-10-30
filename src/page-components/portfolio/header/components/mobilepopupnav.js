@@ -36,11 +36,11 @@ export default class MobilePopupNav extends Component {
                         <p className="sr-only">Main Navigation</p>
                         <ul className="primary-menu nav nav-pills">
                             <li className="nav-item"><a className="nav-link smoth-animation-two active" href="#home">Home</a></li>
-                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#about">About Me</a></li>
-                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#resume">Resume</a></li>
+                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#aboutme">About Me</a></li>
+                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#resumepage">Resume</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#projects">Projects</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#hobbies">Hobbies</a></li>
-                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#contact">Contact</a></li>
+                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#contactme">Contact</a></li>
                         </ul>
 
                         {/* social links */}

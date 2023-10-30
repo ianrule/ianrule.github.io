@@ -51,43 +51,46 @@ export default class Resume extends Component {
         // Change display properties
         if (more_content.style.display === "none") {
             more_content.style.display = "inline";
-            more_button.innerHTML = "Show Less";
+            more_button.innerHTML = "SHOW LESS";
         } else {
             more_content.style.display = "none";
-            more_button.innerHTML = "Show More";
+            more_button.innerHTML = "SHOW MORE";
         }
 
     }
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto"}} id="resume">
+            <section style={{width: "90%", margin: "0 auto"}} id="resumepage">
                 <div className="rn-resume-area rn-section-gap section-separator" id="resume">
                     <div className="container">
+                        {/* section title */}
                         <div className="row">
                             <div className="col-lg-12">
-                                {/* section title */}
                                 <SectionTitle
                                             title="Resume"
-                                            subtitle="Last Updated: In Progress"
-                                        >
+                                            subtitle={
+                                                <a style={{textDecoration: "underline"}} href="https://docs.google.com/document/d/15OntaUvP0bTgTZ2f_Ete8n9-Gu0X30BnhUmP80nWQL4/edit?usp=sharing">LINK TO FULL RESUME</a>
+                                            }
+                                >
                                 </SectionTitle>
                             </div>
                         </div>
-                        <div className="row mt--45">
+
+                        {/* resume */}
+                        <div className="row" style={{margin: "38px 38px 0px 38px"}}>
                             <div className="col-lg-12">
+
+                                {/* navigation */}
                                 <ul className="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
                                     <li className="nav-item">
-                                        <a className="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Work & Education</a>
+                                        <a className="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Education</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">Skills</a>
+                                        <a className="nav-link" id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">Work Experience</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">TBD</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" id="interview-tab" data-bs-toggle="tab" href="#interview" role="tab" aria-controls="interview" aria-selected="false">TBD</a>
+                                        <a className="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Skills</a>
                                     </li>
                                 </ul>
                                 {/* Start Tab Content Wrapper */}
@@ -100,7 +103,7 @@ export default class Resume extends Component {
                                         tab_content={
                                         <div className="row">
                                             <SkillList
-                                                classes="col-lg-6 col-md-12 col-12"
+                                                classes="col-lg-12 col-md-12 col-12"
                                                 dates="2012 - Present"
                                                 title="Education"
                                                 list_content={
@@ -191,13 +194,21 @@ export default class Resume extends Component {
                                                     </span>
                                                 </div>}
                                                 more_button={
-                                                <button type="button" className="rn-btn mt--40" id="educationMoreBtn" onClick={() => this.expand("education")}>
-                                                    Show More
+                                                <button type="button" className="rn-btn mt--38" id="educationMoreBtn" onClick={() => this.expand("education")}>
+                                                    SHOW MORE
                                                 </button>}>
                                             </SkillList>
+                                        </div>}>
+                                    </SingleTab>
 
+                                    <SingleTab
+                                        classes="tab-pane fade"
+                                        id="professional"
+                                        aria_labelledby="professional-tab"
+                                        tab_content={
+                                        <div className="row">
                                             <SkillList
-                                                classes="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
+                                                classes="col-lg-12 col-md-12 col-12 mt_md--60 mt_sm--60"
                                                 dates="2016 - Present"
                                                 title="Work Experience"
                                                 list_content={
@@ -283,8 +294,8 @@ export default class Resume extends Component {
                                                     </span>
                                                 </div>}
                                                 more_button={
-                                                <button type="button" className="rn-btn mt--40" id="workMoreBtn" onClick={() => this.expand("work")}>
-                                                    Show More
+                                                <button type="button" className="rn-btn mt--38" id="workMoreBtn" onClick={() => this.expand("work")}>
+                                                    SHOW MORE
                                                 </button>}>
                                             </SkillList>
                                         </div>}>
@@ -292,7 +303,7 @@ export default class Resume extends Component {
 
                                     <SingleTab
                                         classes="tab-pane fade"
-                                        id="professional"
+                                        id="experience"
                                         aria_labelledby="professional-tab"
                                         tab_content={
                                         <div className="row row--40">
@@ -371,7 +382,7 @@ export default class Resume extends Component {
                                                 </div>}
                                                 more_button={
                                                 <button type="button" className="rn-btn mt--40" id="technicalMoreBtn" onClick={() => this.expand("technical")}>
-                                                    Show More
+                                                    SHOW MORE
                                                 </button>}>
                                             </ProgressChart>
 
@@ -457,81 +468,9 @@ export default class Resume extends Component {
                                                 </div>}
                                                 more_button={
                                                 <button type="button" className="rn-btn mt--40" id="softMoreBtn" onClick={() => this.expand("soft")}>
-                                                    Show More
+                                                    SHOW MORE
                                                 </button>}>
                                             </ProgressChart>
-                                        </div>}>
-                                    </SingleTab>
-
-                                    <SingleTab
-                                        classes="tab-pane fade"
-                                        id="experience"
-                                        aria_labelledby="experience-tab"
-                                        tab_content={
-                                        <div className="row">
-                                            <SkillList
-                                                classes="col-lg-6 col-md-12 col-12"
-                                                dates="TBD"
-                                                title="Awards"
-                                                list_content={
-                                                <div>
-                                                    <ListElement
-                                                        title="Coming Soon"
-                                                        institution="Coming Soon"
-                                                        tag="TBD">
-                                                    </ListElement>
-                                                </div>}>
-                                            </SkillList>
-
-                                            <SkillList
-                                                classes="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
-                                                dates="TBD"
-                                                title="Certifications"
-                                                list_content={
-                                                <div>
-                                                    <ListElement
-                                                        title="Coming Soon"
-                                                        institution="Coming Soon"
-                                                        tag="TBD">
-                                                    </ListElement>
-                                                </div>}>
-                                            </SkillList>
-                                        </div>}>
-                                    </SingleTab>
-
-                                    <SingleTab
-                                        classes="tab-pane fade"
-                                        id="interview"
-                                        aria_labelledby="interview-tab"
-                                        tab_content={
-                                        <div className="row">
-                                            <SkillList
-                                                classes="col-lg-6 col-md-12 col-12"
-                                                dates="TBD"
-                                                title="Clubs"
-                                                list_content={
-                                                <div>
-                                                    <ListElement
-                                                        title="Coming Soon"
-                                                        institution="Coming Soon"
-                                                        tag="TBD">
-                                                    </ListElement>
-                                                </div>}>
-                                            </SkillList>
-
-                                            <SkillList
-                                                classes="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
-                                                dates="TBD"
-                                                title="Volunteer Work"
-                                                list_content={
-                                                <div>
-                                                    <ListElement
-                                                        title="Coming Soon"
-                                                        institution="Coming Soon"
-                                                        tag="TBD">
-                                                    </ListElement>
-                                                </div>}>
-                                            </SkillList>
                                         </div>}>
                                     </SingleTab>
 

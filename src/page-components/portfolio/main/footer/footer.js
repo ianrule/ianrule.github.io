@@ -16,7 +16,7 @@ export default class Footer extends Component {
             <section style={{width: "90%", margin: "0 auto"}} id="footer">
                 <div className="rn-footer-area rn-section-gap section-separator">
                     <div className="container">
-                        <div className="row">
+                        <div className="row" style={{padding: "0 38px 0 38px"}}>
                             <div className="col-lg-12">
                                 <div className="footer-area text-center">
 

@@ -18,8 +18,6 @@ export default class SingleService extends Component {
         var dj_page = document.getElementById("test");
         var mh_nav = document.getElementById("profile-tab");
         var mh_page = document.getElementById("profile");
-        var travel_nav = document.getElementById("contact-tab");
-        var travel_page = document.getElementById("contact");
 
         // Set variables based off of skill list input
         switch(hobby_type) {
@@ -29,17 +27,14 @@ export default class SingleService extends Component {
                 // Change class type of navs
                 dj_nav.className = "nav-style active";
                 mh_nav.className = "nav-style";
-                travel_nav.className = "nav-style";
 
                 // Change aria selected
                 dj_nav.ariaSelected = "true";
                 mh_nav.ariaSelected = "false";
-                travel_nav.ariaSelected = "false";
 
                 // Change class type of pages
                 dj_page.className = "tab-pane fade show active";
                 mh_page.className = "tab-pane fade";
-                travel_page.className = "tab-pane fade";
 
                 break;
             
@@ -48,17 +43,14 @@ export default class SingleService extends Component {
                 // Change class type of navs
                 dj_nav.className = "nav-style";
                 mh_nav.className = "nav-style active";
-                travel_nav.className = "nav-style";
 
                 // Change aria selected
                 dj_nav.ariaSelected = "false";
                 mh_nav.ariaSelected = "true";
-                travel_nav.ariaSelected = "false";
 
                 // Change class type of pages
                 dj_page.className = "tab-pane fade";
                 mh_page.className = "tab-pane fade show active";
-                travel_page.className = "tab-pane fade";
 
                 break;
 
@@ -70,7 +62,7 @@ export default class SingleService extends Component {
 
     render() {
         return (
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay={this.props.data_aos_delay} data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--30 mt_md--30 mt_sm--30">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay={this.props.data_aos_delay} data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--30 mt_md--30 mt_sm--30" style={{marginLeft: "auto", marginRight: "auto"}}>
                 <div className="rn-service">
                     <div className="inner">
                         <div className="icon">
