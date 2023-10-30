@@ -78,7 +78,7 @@ export default class Resume extends Component {
                         </div>
 
                         {/* resume */}
-                        <div className="row" style={{margin: "38px 38px 0px 38px"}}>
+                        <div className="row" style={{margin: "38px 20px 0px 20px"}}>
                             <div className="col-lg-12">
 
                                 {/* navigation */}
@@ -113,7 +113,7 @@ export default class Resume extends Component {
                                                         institution="Boulder, CO"
                                                         tag="2019 - Now"
                                                         description={
-                                                        <div>
+                                                        <span>
                                                             - Pursuing a Bachelor of Science in Computer Science with anticipated graduation in May of 2024
                                                             <br></br>
                                                             - GPA: 3.986
@@ -126,7 +126,7 @@ export default class Resume extends Component {
                                                             Software Development Methods and Tools, 
                                                             Computer Systems, CS 2: Data Structures, 
                                                             CS 1: Starting Computing
-                                                        </div>}>
+                                                        </span>}>
                                                     </ListElement>
                             
                                                     <ListElement

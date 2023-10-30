@@ -15872,14 +15872,14 @@ span.sr-only {
 }
 @media only screen and (max-width: 479px) {
   .rn-pricing .pricing-header {
-    display: block;
-    margin-bottom: 25px;
+    display: flex;
+    margin-bottom: 24px;
     margin-top: 30px;
   }
 }
 @media only screen and (max-width: 479px) {
   .rn-pricing .pricing-header .header-left {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
 }
 .rn-pricing .pricing-header .header-left h2.title {
@@ -16421,6 +16421,7 @@ span.sr-only {
   width: 100%;
 }
 .contact-about-area .social-area .name {
+  text-align: center;
   font-size: 14px;
   font-family: var(--font-secondary);
   font-weight: 500;
@@ -16429,6 +16430,8 @@ span.sr-only {
 }
 .contact-about-area .social-area .social-icone {
   margin-top: 24px;
+  justify-content: center;
+  text-align: center;
 }
 .contact-about-area .social-area .social-icone a {
   width: 61px;
@@ -19784,6 +19787,28 @@ body.white-version .rn-btn-ulderline {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* section media tags */
+@media only screen and (max-width: 767px) {
+  #aboutme {
+    width: 100% !important;
+  }
+  #resumepage {
+    width: 100% !important;
+  }
+  #projects {
+    width: 100% !important;
+  }
+  #hobbies {
+    width: 100% !important;
+  }
+  #contactme {
+    width: 100% !important;
+  }
+  #footer {
+    width: 100% !important;
+  }
 }
 
 
