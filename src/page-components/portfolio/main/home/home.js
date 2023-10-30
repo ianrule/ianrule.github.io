@@ -42,7 +42,7 @@ export default class Home extends Component {
 
                                 {/* contact me button */}
                                 <div className="button-area">
-                                    <a className="rn-btn" href="/#contact"><span>CONTACT ME</span></a>
+                                    <a className="rn-btn" href="/#contactme"><span>CONTACT ME</span></a>
                                 </div>
                             </div>
                         </div>

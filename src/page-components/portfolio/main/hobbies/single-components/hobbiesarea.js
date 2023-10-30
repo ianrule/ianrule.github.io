@@ -37,10 +37,10 @@ export default class HobbiesArea extends Component {
         // Change display properties
         if (more_content.style.display === "none") {
             more_content.style.display = "inline";
-            more_button.innerHTML = "Read Less";
+            more_button.innerHTML = "READ LESS";
         } else {
             more_content.style.display = "none";
-            more_button.innerHTML = "Read More";
+            more_button.innerHTML = "READ MORE";
         }
 
     }
@@ -48,16 +48,16 @@ export default class HobbiesArea extends Component {
     render() {
         return (
             <div className="navigation-wrapper">
-                <ul className="nav" id="myTab" role="tablist">
+                <ul className="nav rn-nav-list" id="myTab" role="tablist" style={{}}>
                     <li className="nav-item">
                         <a className="nav-style active" id="test-tab" data-bs-toggle="tab" href="#test" role="tab" aria-controls="test" aria-selected="true">DJing</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-style" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mental Health</a>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <a className="nav-style" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Travel</a>
-                    </li>
+                    </li> */}
                 </ul>
                 <div className="tab-content" id="myTabContent">
 
@@ -84,7 +84,7 @@ export default class HobbiesArea extends Component {
                                     <List
                                         left_content={
                                         <a href="/#pricing">
-                                            <img src="assets/images/logo/DJ.JPG" alt="dj-img"></img>
+                                            <img src="assets/images/logo/DJ.JPG" alt="dj-img" style={{borderRadius: "50%"}}></img>
                                         </a>}
                                         right_content={
                                         <div>
@@ -113,7 +113,8 @@ export default class HobbiesArea extends Component {
                                 </div>}>
                             </HobbiesBody>
                             <HobbiesFooter
-                                btn_label="Check Out My Soundcloud"
+                                btn_link="https://soundcloud.com/eye-roll"
+                                btn_label="SoundCloud"
                                 time="2 Days Delivery"
                                 activity="Unlimited Revission">
                             </HobbiesFooter>
@@ -139,9 +140,8 @@ export default class HobbiesArea extends Component {
                                 The silver lining? I have learned so much about mental illness and mental wellness over the years. 
                                 I have now returned to my studies and have a full toolkit of coping mechanisms to utilize at times when I find myself in a battle with mental illness."
                                 read_more_btn={
-                                <button type="button" className="rn-btn mt--40" id="mentalHealthMoreBtn" onClick={() => this.expand("mentalhealth")}>
-                                    Read More
-                                </button>}
+                                    <button type="button" className="rn-btn d-block" style={{marginTop: "16px", marginBottom: "16px"}} id="mentalHealthMoreBtn" onClick={() => this.expand("mentalhealth")}><span>READ MORE</span></button>
+                                }
                                 extra_description={
                                 <span id="mentalHealthMoreContent" style={{display: "none"}}>
                                     <br></br>
@@ -154,28 +154,6 @@ export default class HobbiesArea extends Component {
                                     If you are in search of support or just need someone to talk to, my inboxes will always be open to you."
                                 </span>
                                 }
-                                body_content={
-                                <div>
-                                </div>}>
-                            </HobbiesBody>
-                        </div>}>
-                    </HobbiesPage>
-
-                    <HobbiesPage
-                        classes="tab-pane fade"
-                        id="contact"
-                        aria_labelledby="contact-tab"
-                        page_content={
-                        <div>
-                            <HobbiesHeader
-                                title="Travel"
-                                subtitle="Love to Explore"
-                                tags={<Icon.Map></Icon.Map>}>
-                            </HobbiesHeader>
-                            <HobbiesBody
-                                description="Throughout the past 21 years of my life, I have had the opportunity to travel to four different countries and have met people from all around the world.
-                                Traveling is not just a hobby of mine, it has also contributed to my growth as a person in so many ways. 
-                                I find joy in learning about cultures different from my own and seeing all the wondrous places this world has to offer."
                                 body_content={
                                 <div>
                                 </div>}>
