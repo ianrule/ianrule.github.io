@@ -19,7 +19,7 @@ export default class Home extends Component {
 
                 {/* home content */}
                 <div className="container">
-                    <div className="row ml--20 mr--20">
+                    <div className="row">
                         <div className="col-lg-12">
                             <div className="banner-inner">
                                 {/* profile pic */}
