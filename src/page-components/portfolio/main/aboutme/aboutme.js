@@ -33,12 +33,12 @@ export default class AboutMe extends Component {
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto", textAlign: "justify"}} id="aboutme">
+            <section id="aboutme">
                 <div className="rn-service-area rn-section-gap section-separator" id="features">
                     <div className="container">
                         
                         {/* about me reading */}
-                        <div className="row" style={{margin: "0px 20px 0px 20px"}}>
+                        <div className="row ml--20 mr--20">
                             <div className="col-lg-12">
                                 {/* section title */}
                                 <SectionTitle
@@ -56,19 +56,19 @@ export default class AboutMe extends Component {
                                         <br></br>
                                         &emsp;&emsp;I created the following digital portfolio for multiple reasons. For one, I wanted to share my background, professional accomplishments, and personal endeavors in an organized, visually appealing manner. Additionally, I wanted to show off my knowledge of web technologies and web development; I built my website from the ground up (outside of purchasing the styling template online).
                                         <br></br>
-                                        &emsp;&emsp;Below you will find my resume, my professional projects, my hobbies and interests, and my contact information. If you have any questions or concerns, feel free to contact me at any time!
+                                        &emsp;&emsp;Below you will find my resume, my professional projects, my interests, and my contact information. If you have any questions or concerns, feel free to contact me at any time!
                                     </span>
                                 </p>
 
                                 {/* read more button */}
-                                <div className ="aboutMeBtn mt--38" style={{textAlign: "center"}}>
+                                <div className ="mt--30" style={{textAlign: "center"}}>
                                     <button type="button" className="rn-btn" id="aboutMeMoreBtn" style={{width: "auto"}} onClick={() => this.expand()}>READ MORE</button>
                                 </div>
                             </div>
                         </div>
 
                         {/* about me cards */}
-                        <div className="row mt--38 mt_md--38 mt_sm--0" style={{margin: "0 20px 0 20px"}}>
+                        <div className="row mt--10 ml--20 mr--20">
                             <SingleService 
                                 data_aos_delay="100" 
                                 feather_icon={<Icon.HardDrive></Icon.HardDrive>} 
@@ -83,16 +83,16 @@ export default class AboutMe extends Component {
                                 feather_icon={<Icon.Headphones></Icon.Headphones>} 
                                 title="DJing" 
                                 description='Learn more about my DJ background!'
-                                link="/#hobbies"
+                                link="/#interests"
                                 hobby_type="dj">
                             </SingleService>
 
                             <SingleService 
                                 data_aos_delay="500" 
                                 feather_icon={<Icon.Heart></Icon.Heart>} 
-                                title="Mental Wellness" 
+                                title="Mental Health" 
                                 description="Learn more about my mental health journey!"
-                                link="/#hobbies"
+                                link="/#interests"
                                 hobby_type="mh">
                             </SingleService>
                         </div>

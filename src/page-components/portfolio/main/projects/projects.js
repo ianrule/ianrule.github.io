@@ -16,10 +16,11 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto"}} id="projects">
+            <section id="projects">
                 <div className="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
                     <div className="container">
-                        <div className="row">
+                        {/* section title */}
+                        <div className="row ml--20 mr--20">
                             <div className="col-lg-12">
                                 <SectionTitle
                                             title="Projects"
@@ -29,56 +30,74 @@ export default class Projects extends Component {
                             </div>
                         </div>
 
-                        <div className="row mt--10 mt_md--10 mt_sm--10" style={{margin: "0 20px 0 20px"}}>
+                        {/* projects */}
+                        <div className="row ml--20 mr--20">
                             <SinglePortfolio
                                 data_aos_delay="100"
-                                data_bs_target="#modal1"
-                                img_src="assets/images/portfolio/project-01.png"
+                                data_bs_target="#ianrule-modal"
+                                img_src="assets/images/projects/ianrule.png"
                                 category="WEB DEVELOPMENT"
-                                title="My Personal Website (V2)">
+                                title="ianrule.com">
                             </SinglePortfolio>
                             <ProjectsModal
-                                id="modal1"
-                                img_src="assets/images/portfolio/project-01.png"
+                                id="ianrule-modal"
+                                img_src="assets/images/projects/ianrule.png"
                                 category="WEB DEVELOPMENT"
-                                title="My Personal Website (V2)"
-                                description="After returning to my studies in the spring of 2023, I had the opportunity to revamp my personal portfolio website for my professional development class.
-                                I had been wanting to develop a new version of my portfolio prior to enrolling in the class, but I never got around to doing so outside of work, school, and my battle with mental illness in 2022. 
-                                Thus, taking professional development was an opportunity for me to hold myself accountable during the school year in completing this project. 
-                                I developed a completely new version of my personal website to highlight my background, accomplishments, personal endeavors, and development skill in an organized, visually appealing manner."
-                                project_link="">
+                                title="ianrule.com"
+                                description={
+                                    <span>
+                                        &bull; Created an organized React application out of a styling template I purchased for the site
+                                        <br></br>
+                                        &bull; Researched tools and technologies to help me deploy my React application to GitHub Pages
+                                        <br></br>
+                                        &bull; Created a first version of the site using Bootstrap, Node.js, and Heroku for deployment
+                                        <br></br>
+                                        &bull; Problem-solved my way through DNS configuration and downtime issues with version one's deployment
+                                    </span>
+                                }
+                            >
                             </ProjectsModal>
 
                             <SinglePortfolio
                                 data_aos_delay="300"
-                                data_bs_target="#modal2"
-                                img_src="assets/images/portfolio/project-02.png"
-                                category="WEB DEVELOPMENT"
-                                title="My Personal Website (V1)">
+                                data_bs_target="#unpluq-modal"
+                                img_src="assets/images/projects/unpluq.png"
+                                category="WEB & SERVER DEVELOPMENT"
+                                title="Unpluq (Senior Capstone)">
                             </SinglePortfolio>
                             <ProjectsModal
-                                id="modal2"
-                                img_src="assets/images/portfolio/project-02.png"
-                                category="WEB DEVELOPMENT"
-                                title="My Personal Website (V1)"
-                                description="For the first time ever, I coded and deployed my own personal website from scratch in order to display my personal projects and showcase some of my programming skills.
-                                After taking the Software Development Methods and Tools course offered at CU Boulder, I learned how to utilize HTML/Bootstrap, CSS, Javascript, NodeJS, PostgreSQL, Multiple APIs, and Heroku to build and host a website. 
-                                Thus, I decided to take what I had learned in class and apply it to my own personal portfolio project.">
+                                id="unpluq-modal"
+                                img_src="assets/images/projects/unpluq.png"
+                                category="WEB & SERVER DEVELOPMENT"
+                                title="Unpluq (Senior Capstone)"
+                                description={
+                                    <span>
+                                        &bull; Current project manager of a 4-student senior project team tasked with developing new software for the productivity company Unpluq
+                                    </span>
+                                }
+                            >
                             </ProjectsModal>
 
                             <SinglePortfolio
                                 data_aos_delay="500"
-                                data_bs_target="#modal3"
-                                img_src="assets/images/portfolio/portfolio-03.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon">
+                                data_bs_target="#icecream-simulator-modal"
+                                img_src="assets/images/projects/icecream-simulator.png"
+                                category="OBJECT-ORIENTED PROGRAMMING"
+                                title="Ice Cream Store Simulator">
                             </SinglePortfolio>
                             <ProjectsModal
-                                id="modal3"
-                                img_src="assets/images/portfolio/portfolio-04.jpg"
-                                category="COMING SOON"
-                                title="Coming Soon"
-                                description="Description coming soon.">
+                                id="icecream-simulator-modal"
+                                img_src="assets/images/projects/icecream-simulator.png"
+                                category="OBJECT-ORIENTED PROGRAMMING"
+                                title="Ice Cream Store Simulator"
+                                description={
+                                    <span>
+                                        &bull; Project manager of a 3-student project team tasked with the development of an ice cream store simulator for an object-oriented analysis/design course at CU Boulder
+                                        <br></br>
+                                        &bull; Applied object-oriented principles to the back-end and front-end develpoment of the simulator and the creation of 3 UML diagrams
+                                    </span>
+                                }
+                            >
                             </ProjectsModal>
                         </div>
                     </div>

@@ -39,12 +39,12 @@ export default class ProjectsModal extends Component {
                                             {this.props.title}
                                         </h3>
                                         <p className="mb--30" style={{textJustify: "center"}}>{this.props.description}</p>
-                                        <div className="button-group mt--20">
+                                        {/* <div className="button-group mt--20">
                                             <a href={this.props.project_link} className="rn-btn">
                                                 <span>VIEW PROJECT</span>
                                                 <i data-feather="chevron-right"></i>
                                             </a>
-                                        </div>
+                                        </div> */}
 
                                     </div>
 

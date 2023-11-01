@@ -32,7 +32,7 @@ export default class SideNav extends Component {
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#aboutme"><i><Icon.User></Icon.User></i> About Me</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#resumepage"><i><Icon.Briefcase></Icon.Briefcase></i> Resume</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#projects"><i><Icon.Layers></Icon.Layers></i> Projects</a></li>
-                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#hobbies"><i><Icon.Smile></Icon.Smile></i> Hobbies</a></li>
+                            <li className="nav-item"><a className="nav-link smoth-animation-two" href="#interests"><i><Icon.Smile></Icon.Smile></i> Interests</a></li>
                             <li className="nav-item"><a className="nav-link smoth-animation-two" href="#contactme"><i><Icon.MessageCircle></Icon.MessageCircle></i> Contact</a></li>
                         </ul>
                     </nav>

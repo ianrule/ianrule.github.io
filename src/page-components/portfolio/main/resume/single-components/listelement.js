@@ -15,7 +15,7 @@ export default class ListElement extends Component {
         return (
             <div className="resume-single-list">
                 <div className="inner">
-                    <div className="heading">
+                    <div className="heading mb--0">
                         <div className="title">
                             <h4>{this.props.title}</h4>
                             <span>{this.props.institution}</span>

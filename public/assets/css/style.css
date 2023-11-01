@@ -5979,7 +5979,7 @@ ol ul {
 
 @media only screen and (max-width: 479px) {
   .small-margin-pricing {
-    margin-bottom: 25px !important;
+    margin-bottom: 0px !important;
   }
 }
 
@@ -6008,7 +6008,7 @@ ol ul {
 
 @media only screen and (max-width: 575px) {
   .mt-contact-sm {
-    margin-top: 30px !important;
+    margin-top: 38px !important;
   }
 }
 
@@ -11389,6 +11389,7 @@ body.template-color-1 {
 }
 
 .header-style-2 {
+  background-color: var(--background-color-2);
   position: absolute;
   top: 0;
   z-index: 99;
@@ -14504,7 +14505,7 @@ div#featured-project-carousel {
 .personal-experience-inner .experience-list .resume-single-list {
   position: relative;
   z-index: 2;
-  margin-top: 50px;
+  margin-top: 38px;
   padding: 45px 40px;
   border-radius: 6px;
   background: var(--background-color-1);
@@ -15949,13 +15950,12 @@ span.sr-only {
   margin-bottom: 16px;
 }
 .rn-pricing .pricing-body .check-wrapper .check svg {
-  margin-top: 2px;
-  color: var(--color-lightn);
+  color: var(--color-primary);
+  margin-right: 2px;
 }
 .rn-pricing .pricing-body .check-wrapper .check p {
-  margin-left: 5px;
-  color: var(--color-lightn);
   font-weight: 400;
+  color: var(--color-lightn);
   font-size: 16px;
   font-family: var(--font-secondary);
 }
@@ -16323,7 +16323,7 @@ span.sr-only {
     Contact Area Styles 
 -----------------------------*/
 .contact-about-area {
-  width: 460px;
+  width: auto;
   padding: 30px;
   box-shadow: var(--shadow-1);
   border-radius: 10px;
@@ -16337,7 +16337,6 @@ span.sr-only {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-about-area {
-    margin-bottom: 50px;
     height: auto;
   }
 }
@@ -19789,27 +19788,61 @@ body.white-version .rn-btn-ulderline {
   width: 1px;
 }
 
-/* section media tags */
-@media only screen and (max-width: 767px) {
-  #aboutme {
-    width: 100% !important;
-  }
-  #resumepage {
-    width: 100% !important;
-  }
-  #projects {
-    width: 100% !important;
-  }
-  #hobbies {
-    width: 100% !important;
-  }
-  #contactme {
-    width: 100% !important;
-  }
-  #footer {
-    width: 100% !important;
-  }
+/*=========================
+    Section Styles
+==========================*/
+
+#aboutme {
+  margin: 0 auto;
+  text-align: justify;
+  width: 100% !important;
+}
+#resumepage {
+  margin: 0 auto;
+  width: 100% !important;
+}
+#projects {
+  margin: 0 auto;
+  width: 100% !important;
+}
+#interests {
+  margin: 0 auto;
+  width: 100% !important;
+}
+#contactme {
+  margin: 0 auto;
+  width: 100% !important;
+}
+#footer {
+  margin: 0 auto;
+  width: 100% !important;
 }
 
+/*=========================
+    Skill Item
+==========================*/
+
+.skill-item + .skill-item {
+  margin-top: 15px;
+}
+
+.skill-item h6.heading {
+  color: var(--color-lightn);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.skill-item svg {
+  color: var(--color-primary);
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  margin-right: 12px;
+  width: 23px;
+  height: 23px;
+}
 
 /*# sourceMappingURL=../maps/style.css.map */
