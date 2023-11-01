@@ -15,23 +15,24 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <section style={{width: "90%", margin: "0 auto"}} id="contactme">
+            <section id="contactme">
                 <div className="rn-contact-area rn-section-gap section-separator" id="contacts">
                     <div className="container">
+                        {/* section title */}
                         <div className="row">
                             <div className="col-lg-12">
-                                    {/* section title */}
-                                    <SectionTitle
-                                                title="Contact"
-                                                subtitle="Contact Information"
-                                            >
-                                    </SectionTitle>
+                                <SectionTitle
+                                    title="Contact"
+                                    subtitle="Contact Information"
+                                >
+                                </SectionTitle>
                             </div>
                         </div>
 
-                        <div className="row mt--38 mt_md--38 mt_sm--38 mt-contact-sm" style={{width: "90%", margin: "0 auto", padding: "0 20px 0 20px"}}>
+                        {/* contact card */}
+                        <div className="row mt--38 mt_md--38 mt_sm--38 mt-contact-sm ml--20 mr--20">
                             <ContactCard
-                                contact_picture="assets/images/slider/profile-pic.png"
+                                contact_picture="assets/images/contact/contact-pic.png"
                                 title="CS Student at the University of Colorado Boulder"
                                 email="rule.ian@gmail.com"
                                 github_link="https://github.com/ianrule"

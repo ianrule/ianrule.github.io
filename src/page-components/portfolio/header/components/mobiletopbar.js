@@ -13,7 +13,7 @@ export default class MobileTopBar extends Component {
 
     render() {
         return (
-            <div className="header-style-2 d-block d-xl-none">
+            <div className="header-style-2 d-block d-xl-none rn-header header--sticky">
                 <div className="row align-items-center">
                     {/* horizontal logo */}
                     <div className="col-6">

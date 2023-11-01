@@ -14,10 +14,10 @@ export default class SingleService extends Component {
     handleClick(hobby_type) {
 
         // Initialize variables
-        var dj_nav = document.getElementById("test-tab");
-        var dj_page = document.getElementById("test");
-        var mh_nav = document.getElementById("profile-tab");
-        var mh_page = document.getElementById("profile");
+        var dj_nav = document.getElementById("dj-tab");
+        var dj_page = document.getElementById("dj");
+        var mh_nav = document.getElementById("mental-health-tab");
+        var mh_page = document.getElementById("mental-health");
 
         // Set variables based off of skill list input
         switch(hobby_type) {

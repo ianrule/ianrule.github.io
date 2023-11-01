@@ -21,7 +21,7 @@ export default class Header extends Component {
                 >
                 </SideNav>
                 <MobileTopBar
-                    horizontal_logo_link="assets/images/logo/horizontal-logo.png"
+                    horizontal_logo_link="assets/images/logo/text-logo.png"
                 >
                 </MobileTopBar>
                 <MobilePopupNav
