@@ -46,7 +46,7 @@ export default class HobbiesArea extends Component {
             <div className="navigation-wrapper">
                 <ul className="nav rn-nav-list" id="myTab" role="tablist">
                     <li className="nav-item">
-                        <a className="nav-style active" id="dj-tab" data-bs-toggle="tab" href="#dj" role="tab" aria-controls="tdj" aria-selected="true">DJing</a>
+                        <a className="nav-style active" id="dj-tab" data-bs-toggle="tab" href="#dj" role="tab" aria-controls="tdj" aria-selected="true">Music</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-style" id="mental-health-tab" data-bs-toggle="tab" href="#mental-health" role="tab" aria-controls="mental-health" aria-selected="false">Personal Development</a>
@@ -63,7 +63,7 @@ export default class HobbiesArea extends Component {
                                 {/* header */}
                                 <HobbiesHeader
                                     title="Music"
-                                    subtitle="DJing and My Love for Music"
+                                    subtitle="My Love for DJing and Music"
                                     tags={<Icon.Headphones></Icon.Headphones>}
                                 >
                                 </HobbiesHeader>

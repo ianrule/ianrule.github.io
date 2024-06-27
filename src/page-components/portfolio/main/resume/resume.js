@@ -276,7 +276,7 @@ export default class Resume extends Component {
 
                                                             <ProgressBar
                                                                 label="Object-Oriented Programming"
-                                                                percentage="90%"
+                                                                percentage="80%"
                                                                 data_wow_duration="0.6s"
                                                                 data_wow_delay=".4s"
                                                             >
@@ -291,18 +291,18 @@ export default class Resume extends Component {
                                                             </ProgressBar>
 
                                                             <ProgressBar
-                                                                label="Network Systems"
-                                                                percentage="70%"
-                                                                data_wow_duration="0.8s"
-                                                                data_wow_delay=".6s"
-                                                            >
-                                                            </ProgressBar>
-
-                                                            <ProgressBar
                                                                 label="Database Technologies & Data Science"
                                                                 percentage="70%"
                                                                 data_wow_duration="0.9s"
                                                                 data_wow_delay=".7s"
+                                                            >
+                                                            </ProgressBar>
+
+                                                            <ProgressBar
+                                                                label="Network Systems"
+                                                                percentage="60%"
+                                                                data_wow_duration="0.8s"
+                                                                data_wow_delay=".6s"
                                                             >
                                                             </ProgressBar>
 
