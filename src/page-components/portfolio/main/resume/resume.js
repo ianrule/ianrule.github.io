@@ -58,7 +58,7 @@ export default class Resume extends Component {
 
     render() {
         return (
-            <section id="resumepage">
+            <section id="myresume">
                 <div className="rn-resume-area rn-section-gap section-separator" id="resume">
                     <div className="container">
                         {/* section title */}
@@ -67,7 +67,7 @@ export default class Resume extends Component {
                                 <SectionTitle
                                             title="Resume"
                                             subtitle={
-                                                <a style={{textDecoration: "underline"}} href="https://docs.google.com/document/d/15OntaUvP0bTgTZ2f_Ete8n9-Gu0X30BnhUmP80nWQL4/edit?usp=sharing">LINK TO FULL RESUME</a>
+                                                <a style={{textDecoration: "underline"}} href="https://docs.google.com/document/d/15OntaUvP0bTgTZ2f_Ete8n9-Gu0X30BnhUmP80nWQL4/edit?usp=sharing">LINK TO PAPER RESUME</a>
                                             }
                                 >
                                 </SectionTitle>
@@ -101,23 +101,21 @@ export default class Resume extends Component {
                                             <div className="row">
                                                 <SkillList
                                                     classes="col-lg-12 col-md-12 col-12"
-                                                    dates="2015 - Present"
+                                                    dates="2015 - 2024"
                                                     title="Education"
                                                     list_content={
                                                     <div>
                                                         <ListElement
                                                             title="University of Colorado Boulder"
                                                             institution="Boulder, CO"
-                                                            tag="2019 - Present"
+                                                            tag="2019 - 2024"
                                                             description={
                                                                 <span>
-                                                                    &bull; Pursuing a Bachelor of Science in Computer Science with anticipated graduation in May of 2024
+                                                                    &bull; Bachelor of Science in Computer Science with a 3.965 GPA
                                                                     <br></br>
-                                                                    &bull; GPA:  3.959
+                                                                    &bull; Coursework: Universal Design, Network Systems, Intro. to AI, Object-Oriented Analysis/Design, Operating Systems, Intro. to Data Science, Computer Security, Database Systems, Principles of Programming Languages, Algorithms, Fundamentals of HCI, Software Dev. Methods & Tools, Computer Systems, Data Structures
                                                                     <br></br>
-                                                                    &bull; Coursework: Universal Design, Network Systems, Intro. to AI, Object-Oriented Analysis/Design, Operating Systems, Intro. to Data Science, Computer Security, Database Systems, Principles of Programming Languages, Algorithms, Fundamentals of HCI,, Software Dev. Methods & Tools, Computer Systems, Data Structures
-                                                                    <br></br>
-                                                                    &bull; Awards: Dean's List for 7 semesters, Engineering Scholarship Fund recipient, CU Boulder Esteemed Scholar - Joseph A. Sewall
+                                                                    &bull; Awards: Dean's List for 8 semesters, Engineering Scholarship Fund Recipient, CU Boulder Esteemed Scholar - Joseph A. Sewall
                                                                     <br></br>
                                                                     &bull; Clubs & Organizations: Tau Beta Pi, Google DSC Boulder, oSTEM
                                                                 </span>
@@ -131,11 +129,9 @@ export default class Resume extends Component {
                                                             tag="2018"
                                                             description={
                                                                 <span>
-                                                                    &bull; 3-week intensive study of web technologies including (but not limited to) HTML, CSS, JavaScript, Node.js, Jade, and MongoDB
+                                                                    &bull; 3-week intensive study of web technologies including &#40;but not limited to&#41; HTML, CSS, JavaScript, Node.js, Jade, and MongoDB
                                                                     <br></br>
-                                                                    &bull; Collaborated with a diverse group of students coming from over 50 countries
-                                                                    <br></br>
-                                                                    &bull; Final project involved developing a website for the philanthropy club I ran in high school which placed best overall in a class of 30 people
+                                                                    &bull; Ranked first among 30 classmates in collaborating on a final website project with a diverse group representing over 50 countries
                                                                 </span>
                                                             }
                                                         >
@@ -145,24 +141,22 @@ export default class Resume extends Component {
                                                             <ListElement
                                                                 title="Highlands Ranch High School"
                                                                 institution="Highlands Ranch, CO"
-                                                                tag="2015-2019"
+                                                                tag="2015 - 2019"
                                                                 description={
                                                                     <span>
-                                                                        &bull; High School Diploma
+                                                                        &bull; High School Diploma with a 4.11 GPA
                                                                         <br></br>
-                                                                        &bull; GPA: 4.11 weighted (4.0 unweighted)
+                                                                        &bull; Scored 1490 on the SAT
                                                                         <br></br>
-                                                                        &bull; SAT Scores: 1490 (Jun. 2018), 1460 (Apr. 2018)
+                                                                        &bull; Completed advanced coursework in Web Design and AP Computer Science
                                                                         <br></br>
-                                                                        &bull; Coursework: 2 Web Design Courses, AP Computer Science
+                                                                        &bull; Served as president of the HRHS Philanthropy Club
+                                                                        <br></br>
+                                                                        &bull; Developed expertise in business law and marketing
+                                                                        <br></br>
+                                                                        &bull; Honed public speaking skills through various presentations and competitions
                                                                         <br></br>
                                                                         &bull; Awards: 4 Academic Excellence Awards, DECA Academic Letter, National Merit Commended Scholar, DECA Buying and Merchandising Finalist, DECA State Qualifier, Outstanding Sophomore Business/Technology Student Award, Student of the Month
-                                                                        <br></br>
-                                                                        &bull; President of the HRHS Philanthropy Club
-                                                                        <br></br>
-                                                                        &bull; Experience in business law and marketing
-                                                                        <br></br>
-                                                                        &bull; Public speaking experience
                                                                     </span>
                                                                 }
                                                             >
@@ -186,46 +180,49 @@ export default class Resume extends Component {
                                             <div className="row">
                                                 <SkillList
                                                     classes="col-lg-12 col-md-12 col-12"
-                                                    dates="2018 - Present"
+                                                    dates="2021 - Present"
                                                     title="Work Experience"
                                                     list_content={
                                                         <div>
                                                             <ListElement
-                                                                title="Software Development Intern"
-                                                                institution="Swotknot"
-                                                                tag="2021-2022"
-                                                                description={
-                                                                    <span>
-                                                                        &bull; Contributed JavaScript code to the company's new public-facing web user platform by completing over 3 pending Jira tasks and collaborating with a team of 8 developers based out of Pakistan and Greece
-                                                                        <br></br>
-                                                                        &bull; Quickly learned React in order to construct a web application that calls on a movie catalog API to search for movies
-                                                                        <br></br>
-                                                                        &bull; Gained exposure to beginner game theory and AI
-                                                                        <br></br>
-                                                                        &bull; Enhanced personal experience with React, Firebase, and Yarn
-                                                                        <br></br>
-                                                                        &bull; Scheduled question sessions to learn more about application development, application security, login authentication, database usage, and the field of software development as a whole
-                                                                    </span>
-                                                                }
-                                                            > 
-                                                            </ListElement>
-
-                                                            <ListElement
-                                                                title="Sales Associate"
+                                                                title="Ecommerce & Operations Manager"
                                                                 institution="Fast-Fix Jewelry and Watch Repairs"
-                                                                tag="2022-2023"
+                                                                tag="2022 - Present"
                                                                 description={
                                                                     <span>
-                                                                        &bull; Strengthened my communication, problem-solving, stress-management, and collaboration skills by walking customers through the jewelry and watch repair intake process and selling store merchandise
+                                                                        &bull; Developing a custom Shopify store to enhance consumer experience and boost sales
                                                                         <br></br>
-                                                                        &bull; Worked with management to develop solutions for a variety of operational issues like technician booking, system documentation, and future staff training
+                                                                        &bull; Managing and maintaining accurate inventory data for 2 retail shops using Lightspeed
                                                                         <br></br>
-                                                                        &bull; Helped the store reorganize in order to enhance its efficiency and customer appeal
+                                                                        &bull; Creating sales reports in Google Sheets for strategic decision-making
+                                                                        <br></br>
+                                                                        &bull; Optimizing operations through the development and implementation of solutions for technician booking, system documentation, shop organization, and staff training
                                                                     </span>
                                                                 }
                                                             >
                                                             </ListElement>
                                     
+
+                                                            <ListElement
+                                                                title="Software Development Intern"
+                                                                institution="Swotknot"
+                                                                tag="2021 - 2022"
+                                                                description={
+                                                                    <span>
+                                                                        &bull; Developed features for a public-facing web user platform using JavaScript, React, Firebase, and Yarn
+                                                                        <br></br>
+                                                                        &bull; Successfully resolved 3 pending Jira tasks within the first sprint with the development team
+                                                                        <br></br>
+                                                                        &bull; Collaborated closely with an internal team of 8 developers from Pakistan and Greece
+                                                                        <br></br>
+                                                                        &bull; Created a movie catalog web application utilizing the IMDb API
+                                                                        <br></br>
+                                                                        &bull; Studied game theory, AI, application security, login authentication, and database technologies to broaden technical expertise
+                                                                    </span>
+                                                                }
+                                                            > 
+                                                            </ListElement>
+
                                                             <span id="workMoreContent" style={{display: "none"}}>
                                                                 <ListElement
                                                                     title="Server and F.O.H. Support"
@@ -233,25 +230,15 @@ export default class Resume extends Component {
                                                                     tag="2021"
                                                                     description={
                                                                         <span>
-                                                                            &bull; Strengthened my communication, organizational, collaboration, problem-solving, stress-management and leadership skills by formally serving customers, learning 2 menus and 3 different staff positions, and training over 3 new employees
+                                                                            &bull; Served food and beverages to patrons in a formal dining setting, poolside, and at club events
                                                                             <br></br>
-                                                                            &bull; Offered a software development internship with “Swotknot” after getting to know the company's founder
-                                                                        </span>
-                                                                    }
-                                                                >
-                                                                </ListElement>
-
-                                                                <ListElement
-                                                                    title="Cook, Dish Washer, and F.O.H. Team Member"
-                                                                    institution="Noodles & Company"
-                                                                    tag="2018-2020"
-                                                                    description={
-                                                                        <span>
-                                                                            &bull; Enhanced my communication, collaboration, problem-solving, stress-management, and leadership skills through customer engagement, learning 5 different staff positions, and training over 10 new employees
+                                                                            &bull; Memorized 2 separate dining menus
                                                                             <br></br>
-                                                                            &bull; Awarded Employee of the Month 2 times
+                                                                            &bull; Held 3 different staff positions, including server, bartender, and expo
                                                                             <br></br>
-                                                                            &bull; Responsible for checking the accuracy of customer orders, cooking food, running the cash register, waiting on customers, and occasionally taking over management duties
+                                                                            &bull; Trained 3 new employees
+                                                                            <br></br>
+                                                                            &bull; Received a software development internship offer with “Swotknot” by a member of the club
                                                                         </span>
                                                                     }
                                                                 >
@@ -276,11 +263,11 @@ export default class Resume extends Component {
                                                 <SkillChart
                                                     classes="col-lg-8 col-md-7 col-12"
                                                     maintitle="Technical Skills"
-                                                    subtitle="Self-Assessed"
+                                                    subtitle=""
                                                     bar_content={
                                                         <div>
                                                             <ProgressBar
-                                                                label="Web Development (HTML5, CSS, JavaScript, React, etc.)"
+                                                                label="Web Development & Web Technologies"
                                                                 percentage="95%"
                                                                 data_wow_duration="0.5s"
                                                                 data_wow_delay=".3s"
@@ -288,7 +275,7 @@ export default class Resume extends Component {
                                                             </ProgressBar>
 
                                                             <ProgressBar
-                                                                label="Agile Project Management"
+                                                                label="Object-Oriented Programming"
                                                                 percentage="90%"
                                                                 data_wow_duration="0.6s"
                                                                 data_wow_delay=".4s"
@@ -296,32 +283,32 @@ export default class Resume extends Component {
                                                             </ProgressBar>
 
                                                             <ProgressBar
-                                                                label="Git/Version Control"
-                                                                percentage="85%"
+                                                                label="Data Structures & Algorithms"
+                                                                percentage="80%"
                                                                 data_wow_duration="0.7s"
                                                                 data_wow_delay=".5s"
                                                             >
                                                             </ProgressBar>
 
                                                             <ProgressBar
-                                                                label="C, C++"
-                                                                percentage="80%"
+                                                                label="Network Systems"
+                                                                percentage="70%"
                                                                 data_wow_duration="0.8s"
                                                                 data_wow_delay=".6s"
                                                             >
                                                             </ProgressBar>
 
                                                             <ProgressBar
-                                                                label="Python"
-                                                                percentage="75%"
+                                                                label="Database Technologies & Data Science"
+                                                                percentage="70%"
                                                                 data_wow_duration="0.9s"
                                                                 data_wow_delay=".7s"
                                                             >
                                                             </ProgressBar>
 
                                                             <ProgressBar
-                                                                label="Java"
-                                                                percentage="70%"
+                                                                label="Computer Security & Operating Systems"
+                                                                percentage="60%"
                                                                 data_wow_duration="1.0s"
                                                                 data_wow_delay=".8s"
                                                             >
@@ -331,34 +318,26 @@ export default class Resume extends Component {
                                                                 <br></br>
 
                                                                 <ProgressBar
-                                                                    label="SQL"
-                                                                    percentage="70%"
+                                                                    label="Version Control"
+                                                                    percentage="90%"
                                                                     data_wow_duration="0.5s"
                                                                     data_wow_delay=".3s"
                                                                 >
                                                                 </ProgressBar>
 
                                                                 <ProgressBar
-                                                                    label="GDB"
-                                                                    percentage="60%"
+                                                                    label="API Integration"
+                                                                    percentage="80%"
                                                                     data_wow_duration="0.6s"
                                                                     data_wow_delay=".4s"
                                                                 >
                                                                 </ProgressBar>
 
                                                                 <ProgressBar
-                                                                    label="Adobe Graphic Design Tools"
-                                                                    percentage="50%"
+                                                                    label="Agile Project Management"
+                                                                    percentage="70%"
                                                                     data_wow_duration="0.7s"
                                                                     data_wow_delay=".5s"
-                                                                >
-                                                                </ProgressBar>
-
-                                                                <ProgressBar
-                                                                    label="Swift"
-                                                                    percentage="50%"
-                                                                    data_wow_duration="0.8s"
-                                                                    data_wow_delay=".6s"
                                                                 >
                                                                 </ProgressBar>
                                                             </span>
@@ -371,39 +350,9 @@ export default class Resume extends Component {
                                                 <SkillChart
                                                     classes="col-lg-4 col-md-5 col-12 mt_sm--38"
                                                     maintitle="Soft Skills"
-                                                    subtitle="Always Improving"
+                                                    subtitle=""
                                                     bar_content={
                                                         <div>
-                                                            <SkillElement
-                                                                label="Adaptability"
-                                                                data_feather="check"
-                                                            >
-                                                            </SkillElement>
-
-                                                            <SkillElement
-                                                                label="Communication"
-                                                                data_feather="check"
-                                                            >
-                                                            </SkillElement>
-
-                                                            <SkillElement
-                                                                label="Strong Work Ethic"
-                                                                data_feather="check"
-                                                            >
-                                                            </SkillElement>
-
-                                                            <SkillElement
-                                                                label="Accountability"
-                                                                data_feather="check"
-                                                            >
-                                                            </SkillElement>
-
-                                                            <SkillElement
-                                                                label="Organization"
-                                                                data_feather="check"
-                                                            >
-                                                            </SkillElement>
-
                                                             <SkillElement
                                                                 label="Problem Solving"
                                                                 data_feather="check"
@@ -417,13 +366,19 @@ export default class Resume extends Component {
                                                             </SkillElement>
 
                                                             <SkillElement
-                                                                label="Stress Management"
+                                                                label="Communication"
                                                                 data_feather="check"
                                                             >
                                                             </SkillElement>
 
                                                             <SkillElement
-                                                                label="Time Management"
+                                                                label="Organization"
+                                                                data_feather="check"
+                                                            >
+                                                            </SkillElement>
+
+                                                            <SkillElement
+                                                                label="Leadership"
                                                                 data_feather="check"
                                                             >
                                                             </SkillElement>
@@ -435,13 +390,37 @@ export default class Resume extends Component {
                                                             </SkillElement>
 
                                                             <SkillElement
+                                                                label="Accountability"
+                                                                data_feather="check"
+                                                            >
+                                                            </SkillElement>
+
+                                                            <SkillElement
+                                                                label="Adaptability"
+                                                                data_feather="check"
+                                                            >
+                                                            </SkillElement>
+
+                                                            <SkillElement
+                                                                label="Time Management"
+                                                                data_feather="check"
+                                                            >
+                                                            </SkillElement>
+
+                                                            <SkillElement
+                                                                label="Stress Management"
+                                                                data_feather="check"
+                                                            >
+                                                            </SkillElement>
+
+                                                            <SkillElement
                                                                 label="Customer Service"
                                                                 data_feather="check"
                                                             >
                                                             </SkillElement>
 
                                                             <SkillElement
-                                                                label="Leadership"
+                                                                label="Strong Work Ethic"
                                                                 data_feather="check"
                                                             >
                                                             </SkillElement>

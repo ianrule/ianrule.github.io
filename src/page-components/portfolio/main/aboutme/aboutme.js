@@ -49,14 +49,12 @@ export default class AboutMe extends Component {
                                 
                                 {/* paragraph */}
                                 <p className="description mt--38">
-                                    &emsp;&emsp;Hello! My name is Ian Rule, and I am a fifth-year engineering student at the University of Colorado Boulder. I am currently pursuing a B.S. (Bachelor of Science) in Computer Science in hopes to work in the field of software development. I am very passionate about technological innovation and the problems it can solve, and I love to evolve with new technology. In my free time, I enjoy DJing, mental health advocacy, working out, being outdoors, spending time with family and friends, listening to music, traveling, and taking in all of the knowledge this world has to offer. I am truly blessed to live the life that I do, and I want to leave as positive of an impact as I can on this world.
+                                    &emsp;&emsp;Hello! My name is Ian Rule, and I am a recent computer science graduate from the College of Engineering and Applied Science at CU Boulder. I have a strong background in problem-solving, leadership, and collaboration, developed through various academic projects and professional roles. I am actively seeking an entry-level software development opportunity to apply my expertise and passion for technology to real-world challenges.
                                     <span id="aboutMeMoreContent" style={{display: "none"}}>
                                         <br></br>
-                                        &emsp;&emsp;Throughout my educational journey, I have been exposed to many of the major computer science specializations. I have taken classes in topics including, but not limited to, network systems, artifical intelligence, data science, cybersecurity, database management, software development, and web technologies. I was also the project manager for two of the major software development projects I completed for college credit. Outside of the classroom, I have worked as software development intern for a Boulder-based startup by the name of Swotknot. Finally, I have many years of experience in web technologies dating back to early high school.
+                                        &emsp;&emsp;Beyond my professional interests, I enjoy listening to music, focusing on personal development and mental wellness, working out, exploring the outdoors, and traveling. I am dedicated to expanding my knowledge and skill set, and I strive to leave a positive impact through my work and interactions.
                                         <br></br>
-                                        &emsp;&emsp;I created the following digital portfolio for multiple reasons. For one, I wanted to share my background, professional accomplishments, and personal endeavors in an organized, visually appealing manner. Additionally, I wanted to show off my knowledge of web technologies and web development; I built my website from the ground up (outside of purchasing the styling template online).
-                                        <br></br>
-                                        &emsp;&emsp;Below you will find my resume, my professional projects, my interests, and my contact information. If you have any questions or concerns, feel free to contact me at any time!
+                                        &emsp;&emsp;I developed the following digital portfolio to share my background, professional accomplishments, and personal endeavors in a more organized and digestable manner. Below you will learn more about me and my experience. If you have any questions or concerns, feel free to connect with me via LinkedIn or Instagram.
                                     </span>
                                 </p>
 
@@ -71,29 +69,29 @@ export default class AboutMe extends Component {
                         <div className="row mt--10 ml--20 mr--20">
                             <SingleService 
                                 data_aos_delay="100" 
-                                feather_icon={<Icon.HardDrive></Icon.HardDrive>} 
-                                title="Software Development" 
-                                description="Check out a few of my projects!"
-                                link="/#projects"
+                                feather_icon={<Icon.Briefcase></Icon.Briefcase>} 
+                                title="Resume" 
+                                description="View my resume!"
+                                link="/#myresume"
                                 hobby_type="">
                             </SingleService>
 
                             <SingleService 
                                 data_aos_delay="300" 
-                                feather_icon={<Icon.Headphones></Icon.Headphones>} 
-                                title="DJing" 
-                                description='Learn more about my DJ background!'
-                                link="/#interests"
-                                hobby_type="dj">
+                                feather_icon={<Icon.Layers></Icon.Layers>} 
+                                title="Professional Projects" 
+                                description='Explore my professional projects!'
+                                link="/#projects"
+                                hobby_type="">
                             </SingleService>
 
                             <SingleService 
                                 data_aos_delay="500" 
-                                feather_icon={<Icon.Heart></Icon.Heart>} 
-                                title="Mental Health" 
-                                description="Learn more about my mental health journey!"
+                                feather_icon={<Icon.Smile></Icon.Smile>} 
+                                title="Personal Interests" 
+                                description="Learn about my love for music and personal development!"
                                 link="/#interests"
-                                hobby_type="mh">
+                                hobby_type="dj">
                             </SingleService>
                         </div>
                     </div>

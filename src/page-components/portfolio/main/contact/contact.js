@@ -33,7 +33,7 @@ export default class Contact extends Component {
                         <div className="row mt--38 mt_md--38 mt_sm--38 mt-contact-sm ml--20 mr--20">
                             <ContactCard
                                 contact_picture="assets/images/contact/contact-pic.png"
-                                title="CS Student at the University of Colorado Boulder"
+                                title="Ecommerce & Operations Manager at Fast-Fix Denver"
                                 email="rule.ian@gmail.com"
                                 github_link="https://github.com/ianrule"
                                 linkedin_link="https://www.linkedin.com/in/ian-rule/"
