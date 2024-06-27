@@ -46,13 +46,11 @@ export default class Projects extends Component {
                                 title="ianrule.com"
                                 description={
                                     <span>
-                                        &bull; Created an organized React application out of a styling template I purchased for the site
+                                        &bull; Transformed a purchased style template into a full-fledged React web application
                                         <br></br>
-                                        &bull; Researched tools and technologies to help me deploy my React application to GitHub Pages
+                                        &bull; Applied my mastery of web technologies to the customization and deployment of my website
                                         <br></br>
-                                        &bull; Created a first version of the site using Bootstrap, Node.js, and Heroku for deployment
-                                        <br></br>
-                                        &bull; Problem-solved my way through DNS configuration and downtime issues with version one's deployment
+                                        &bull; Resolved DNS configuration and downtime issues during the initial deployment on Heroku
                                     </span>
                                 }
                             >
@@ -62,17 +60,21 @@ export default class Projects extends Component {
                                 data_aos_delay="300"
                                 data_bs_target="#unpluq-modal"
                                 img_src="assets/images/projects/unpluq.png"
-                                category="WEB & SERVER DEVELOPMENT"
-                                title="Unpluq (Senior Capstone)">
+                                category="WEB DEVELOPMENT"
+                                title="Unpluq Broswer Extension">
                             </SinglePortfolio>
                             <ProjectsModal
                                 id="unpluq-modal"
                                 img_src="assets/images/projects/unpluq.png"
                                 category="WEB & SERVER DEVELOPMENT"
-                                title="Unpluq (Senior Capstone)"
+                                title="Unpluq Browser Extension"
                                 description={
                                     <span>
-                                        &bull; Current project manager of a 4-student senior project team tasked with developing new software for the productivity company Unpluq
+                                        &bull; Managed a senior software engineering project team of 4 students, sponsored by Unpluq
+                                        <br></br>
+                                        &bull; Built a custom UI for a new browser extension with HTML, CSS, JavaScript, and Webpack
+                                        <br></br>
+                                        &bull; Integrated front-end code with the Unpluq authentication API, mobile applications, and Google SSO
                                     </span>
                                 }
                             >
@@ -80,21 +82,23 @@ export default class Projects extends Component {
 
                             <SinglePortfolio
                                 data_aos_delay="500"
-                                data_bs_target="#icecream-simulator-modal"
-                                img_src="assets/images/projects/icecream-simulator.png"
-                                category="OBJECT-ORIENTED PROGRAMMING"
-                                title="Ice Cream Store Simulator">
+                                data_bs_target="#literature-review-modal"
+                                img_src="assets/images/projects/literature-review.png"
+                                category="Computer Security"
+                                title="Literature Review on Insecure Code Utilization">
                             </SinglePortfolio>
                             <ProjectsModal
-                                id="icecream-simulator-modal"
-                                img_src="assets/images/projects/icecream-simulator.png"
-                                category="OBJECT-ORIENTED PROGRAMMING"
-                                title="Ice Cream Store Simulator"
+                                id="literature-review-modal"
+                                img_src="assets/images/projects/literature-review.png"
+                                category="Computer Security"
+                                title="Literature Review on Insecure Code Utilization"
                                 description={
                                     <span>
-                                        &bull; Project manager of a 3-student project team tasked with the development of an ice cream store simulator for an object-oriented analysis/design course at CU Boulder
+                                        &bull; Analyzed and synthesized findings from 9 separate scholarly articles on security concerns in Stack Overflow code, identifying key vulnerabilities and patterns
                                         <br></br>
-                                        &bull; Applied object-oriented principles to the back-end and front-end develpoment of the simulator and the creation of 3 UML diagrams
+                                        &bull; Honed professional writing skills by examining and emulating the structure and literary practices of exemplary computer science literature reviews
+                                        <br></br>
+                                        &bull; Deepened my understanding of computer security vulnerabilities, leading to a more comprehensive approach to identifying and mitigating potential risks in software development
                                     </span>
                                 }
                             >

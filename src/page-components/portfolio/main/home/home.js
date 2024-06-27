@@ -32,11 +32,11 @@ export default class Home extends Component {
 
                                 {/* passion statements */}
                                 <span className="cd-headline clip is-full-width">
-                                    <span>Passionate about</span>
+                                    <span>Devoted to</span>
                                     <span className="cd-words-wrapper">
-                                        <b className="is-visible pl--10">Software.</b>
-                                        <b className="is-hidden pl--10">DJing.</b>
-                                        <b className="is-hidden pl--10">Mental Health.</b>
+                                        <b className="is-visible pl--10">Computer Science.</b>
+                                        <b className="is-hidden pl--10">Technology.</b>
+                                        <b className="is-hidden pl--10">Personal Development.</b>
                                     </span>
                                 </span>
 

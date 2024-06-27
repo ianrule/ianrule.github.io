@@ -49,7 +49,7 @@ export default class HobbiesArea extends Component {
                         <a className="nav-style active" id="dj-tab" data-bs-toggle="tab" href="#dj" role="tab" aria-controls="tdj" aria-selected="true">DJing</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-style" id="mental-health-tab" data-bs-toggle="tab" href="#mental-health" role="tab" aria-controls="mental-health" aria-selected="false">Mental Health</a>
+                        <a className="nav-style" id="mental-health-tab" data-bs-toggle="tab" href="#mental-health" role="tab" aria-controls="mental-health" aria-selected="false">Personal Development</a>
                     </li>
                 </ul>
                 <div className="tab-content" id="myTabContent">
@@ -62,20 +62,19 @@ export default class HobbiesArea extends Component {
                             <div>
                                 {/* header */}
                                 <HobbiesHeader
-                                    title="DJing"
-                                    subtitle="Dr. Slyme"
+                                    title="Music"
+                                    subtitle="DJing and My Love for Music"
                                     tags={<Icon.Headphones></Icon.Headphones>}
                                 >
                                 </HobbiesHeader>
 
                                 {/* body */}
                                 <HobbiesBody
-                                    description='Music has always been a source of joy, support, and connection in my life. I found myself inspired by artists like Skrillex and Martin Garrix growing up and hoped to one day explore the art of DJing. I decided to pursue my interest in highschool by taking lessons with DJ Walt White at Global DJ Academy. In 2017, I purchased my first DJ controller and was able to enhance my skills by learning from my good friend TJ (who previously produced for a duo by the name of Krowd Ktrl). That same year, I performed at Skylab, a music event hosted by Global Dance. Since Skylab, I have done more live performances and have released mixes on SoundCloud under the alias “Dr. Slyme” (now “Eye Roll”).
-                                    I have had the pleasure of performing live at the following events:'
+                                    description='Music has always been a source of joy, support, and connection in my life. Inspired by artists like Skrillex and Martin Garrix, I dreamt of one day exploring the art of DJing as a child. My dreams became reality after I took lessons with DJ Walt White at Global DJ Academy, and in 2017, I purchased my first DJ controller. With additional guidance from my good friend TJ, who now produces music under the alias “Crucible,” I enhanced my skills. That same year, I performed at Skylab, a music event hosted by Global Dance. I continued to perform live and release mixes on SoundCloud under the alias “Dr. Slyme” (now “Eye Roll”) at the following events:'
                                     body_content={
                                         <div>
                                             <List
-                                                left_content={<a href="/#dj"><img src="assets/images/interests/djing.png" alt="Picture of Ian Rule performing at Larmier Lounge" style={{borderRadius: "50%"}}></img></a>}
+                                                left_content={<a href="/#dj"><img src="assets/images/interests/djing.png" alt="Ian Rule performing at Larmier Lounge" style={{borderRadius: "50%"}}></img></a>}
                                                 right_content={
                                                     <div>
                                                         <ListItem
@@ -126,13 +125,13 @@ export default class HobbiesArea extends Component {
                             <div>
                                 {/* header */}
                                 <HobbiesHeader
-                                    title="Mental Health"
-                                    subtitle="Never Give Up"
+                                    title="Personal Development"
+                                    subtitle="Leaving Behind a Positive Legacy"
                                     tags={<Icon.Heart></Icon.Heart>}
                                 >
                                 </HobbiesHeader>
                                 <HobbiesBody
-                                    description="After losing both my uncle and sister to suicide before the end of middle school, I was made well aware of how important mental health is at a young age. I have battled both an anxiety disorder and depression myself. I have tried many different forms of therapy and have participated in multiple inpatient and outpatient programs. My journey has been far from easy, but I have learned so much about myself and mental health as a whole because of it. I have volunteered for multiple non-profit organizations in the mental health industry and do the best I can to share my wisdom with those around me. I am truly blessed to live the life that I do, and I want to leave as positive of an impact as I can on this world. To anyone reading this who feels like giving up, I beg you to keep fighting. I and many others know how earth-shattering it can feel to lose all hope; you are never alone. If you don't believe your loved ones right now when they tell you that this too shall pass, know that I have been right there with you, and I pray that one day you will see, like I did, that they were right all along. If you are in search of support or just need someone to talk to, my inboxes will always be open to you."
+                                    description="After losing both my uncle and sister to suicide before the end of middle school, I quickly became aware of the importance of mental health at a young age. Years of dedication to understanding mental illness and exposing myself to new perspectives and resources have allowed me to grow substantially as an individual while helping others become the best version of themselves along the way. I live my life sober and am always seeking ways to improve my physical and mental well-being. I have volunteered for multiple non-profit organizations in the mental health industry and love to share my wisdom and experience with those around me. I am truly blessed to live the life that I do, and I want to leave as positive an impact as I can on this world. To anyone reading this who feels like giving up, I beg you to keep fighting. I and many others know how earth-shattering it can feel to lose all hope; you are never alone. If you don't believe your loved ones right now when they tell you that this too shall pass, know that I have been right there with you, and I pray that one day you will see, like I did, that they were right all along. If you are in search of support or just need someone to talk to, my inboxes will always be open to you."
                                     body_content={<div></div>}
                                 >
                                 </HobbiesBody>

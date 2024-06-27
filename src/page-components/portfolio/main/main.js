@@ -48,7 +48,7 @@ export default class Main extends Component {
                     logo_src="assets/images/logo/text-logo.png"
                     description={
                     <p className="description mt--30">
-                        Created with Node.js and React. Website theme purchased from <a target="_blank" rel="noopener noreferrer" href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a>
+                        Created by Ian Rule. Website theme purchased from <a target="_blank" rel="noopener noreferrer" href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a>
                     </p>}>
                 </Footer>
 
