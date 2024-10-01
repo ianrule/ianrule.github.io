@@ -23,7 +23,7 @@ export default class ContactCard extends Component {
                 </div>
                 <div className="description">
                     {/* <p>{this.props.description}</p> */}
-                    {/* <span className="mail">Email: <a href={"mailto:" + this.props.email} style={{textDecoration: "underline"}}>{this.props.email}</a></span> */}
+                    <span className="mail">Email: <a href={"mailto:" + this.props.email} style={{textDecoration: "underline"}}>{this.props.email}</a></span>
                 </div>
                 <div className="social-area">
                     <div className="name">CONNECT WITH ME</div>

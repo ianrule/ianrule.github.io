@@ -35,7 +35,7 @@ export default class Home extends Component {
                                     <span>Devoted to</span>
                                     <span className="cd-words-wrapper">
                                         <b className="is-visible pl--10">Computer Science.</b>
-                                        <b className="is-hidden pl--10">Technology.</b>
+                                        <b className="is-hidden pl--10">Innovation.</b>
                                         <b className="is-hidden pl--10">Personal Development.</b>
                                     </span>
                                 </span>

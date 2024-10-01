@@ -46,11 +46,9 @@ export default class Projects extends Component {
                                 title="ianrule.com"
                                 description={
                                     <span>
-                                        &bull; Transformed a purchased style template into a full-fledged React web application
+                                        &bull; Customized and deployed my portfolio website using React, Node.js, SASS, and GitHub Pages to showcase my expertise in web technologies.
                                         <br></br>
-                                        &bull; Applied my mastery of web technologies to the customization and deployment of my website
-                                        <br></br>
-                                        &bull; Resolved DNS configuration and downtime issues during the initial deployment on Heroku
+                                        &bull; Resolved DNS configuration and downtime issues during the initial deployment to Heroku.
                                     </span>
                                 }
                             >
@@ -70,11 +68,11 @@ export default class Projects extends Component {
                                 title="Unpluq Browser Extension"
                                 description={
                                     <span>
-                                        &bull; Managed a senior software engineering project team of 4 students, sponsored by Unpluq
+                                        &bull; Led a team of 4 students on a senior software engineering project sponsored by Unpluq.
                                         <br></br>
-                                        &bull; Built a custom UI for a new browser extension with HTML, CSS, JavaScript, and Webpack
+                                        &bull; Developed a custom UI for a new browser extension using HTML, SASS, JavaScript, and Webpack.
                                         <br></br>
-                                        &bull; Integrated front-end code with the Unpluq authentication API, mobile applications, and Google SSO
+                                        &bull; Integrated front-end code with the Unpluq authentication API, mobile applications, and Google SSO.
                                     </span>
                                 }
                             >
@@ -94,11 +92,11 @@ export default class Projects extends Component {
                                 title="Literature Review on Insecure Code Utilization"
                                 description={
                                     <span>
-                                        &bull; Analyzed and synthesized findings from 9 separate scholarly articles on security concerns in Stack Overflow code, identifying key vulnerabilities and patterns
+                                        &bull; Analyzed and synthesized findings from 9 separate scholarly articles on security concerns in Stack Overflow code, identifying key vulnerabilities and patterns.
                                         <br></br>
-                                        &bull; Honed professional writing skills by examining and emulating the structure and literary practices of exemplary computer science literature reviews
+                                        &bull; Honed professional writing skills by examining and emulating the structure and literary practices of exemplary computer science literature reviews.
                                         <br></br>
-                                        &bull; Deepened my understanding of computer security vulnerabilities, leading to a more comprehensive approach to identifying and mitigating potential risks in software development
+                                        &bull; Deepened my understanding of computer security vulnerabilities, leading to a more comprehensive approach to identifying and mitigating potential risks in software development.
                                     </span>
                                 }
                             >

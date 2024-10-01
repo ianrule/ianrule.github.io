@@ -49,12 +49,12 @@ export default class AboutMe extends Component {
                                 
                                 {/* paragraph */}
                                 <p className="description mt--38">
-                                    &emsp;&emsp;Hello! My name is Ian Rule, and I am a recent computer science graduate from the College of Engineering and Applied Science at CU Boulder. I have a strong background in problem-solving, leadership, and collaboration, developed through various academic projects and professional roles. I am actively seeking an entry-level software development opportunity to apply my expertise and passion for technology to real-world challenges.
+                                    &emsp;&emsp;Hello! I'm Ian Rule, a recent computer science graduate with a passion for front-end development, specializing in React and JavaScript. I have an extensive track record of leading projects and collaborating with diverse teams to deliver innovative solutions. Currently, I'm expanding my expertise in back-end technologies like Node.js and cloud platforms, while learning more about AI-driven software development. I am seeking a role where I can make meaningful contributions with my front-end expertise as I transition into full-stack development.
                                     <span id="aboutMeMoreContent" style={{display: "none"}}>
                                         <br></br>
-                                        &emsp;&emsp;Beyond my professional interests, I enjoy listening to music, focusing on personal development and mental wellness, working out, exploring the outdoors, and traveling. I am dedicated to expanding my knowledge and skill set, and I strive to leave a positive impact through my work and interactions.
+                                        &emsp;&emsp;Beyond my professional interests, I enjoy listening to music, focusing on personal development and mental wellness, working out, exploring the outdoors, and traveling. I am dedicated to expanding my knowledge and skill set, and I strive to leave a positive impact in everything I do.
                                         <br></br>
-                                        &emsp;&emsp;I developed the following digital portfolio to share my background, professional accomplishments, and personal endeavors in a more organized and digestable manner. Below you will learn more about me and my experience. If you have any questions or concerns, feel free to connect with me via LinkedIn or Instagram.
+                                        &emsp;&emsp;I developed the following digital portfolio to share my background, professional accomplishments, and personal endeavors in a more organized and digestable manner. Below you will learn more about me and my experience. If you have any questions or concerns, feel free to connect with me via LinkedIn or email.
                                     </span>
                                 </p>
 
