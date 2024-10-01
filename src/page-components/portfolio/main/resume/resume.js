@@ -81,10 +81,10 @@ export default class Resume extends Component {
                                 {/* navigation */}
                                 <ul className="rn-nav-list nav nav-tabs mt--0" id="myTabs" role="tablist">
                                     <li className="nav-item">
-                                        <a className="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Education</a>
+                                        <a className="nav-link active" id="work-tab" data-bs-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Work Experience</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" id="work-tab" data-bs-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Work Experience</a>
+                                        <a className="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Education</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
@@ -94,7 +94,7 @@ export default class Resume extends Component {
                                 <div className="rn-nav-content tab-content" id="myTabContents">
 
                                     <SingleTab
-                                        classes="tab-pane show active fade single-tab-area"
+                                        classes="tab-pane fade"
                                         id="education"
                                         aria_labelledby="education-tab"
                                         tab_content={
@@ -111,13 +111,17 @@ export default class Resume extends Component {
                                                             tag="2019 - 2024"
                                                             description={
                                                                 <span>
-                                                                    &bull; Bachelor of Science in Computer Science with a 3.965 GPA
+                                                                    &bull; Bachelor of Science in Computer Science with a 3.965 GPA.
                                                                     <br></br>
-                                                                    &bull; Coursework: Universal Design, Network Systems, Intro. to AI, Object-Oriented Analysis/Design, Operating Systems, Intro. to Data Science, Computer Security, Database Systems, Principles of Programming Languages, Algorithms, Fundamentals of HCI, Software Dev. Methods & Tools, Computer Systems, Data Structures
+                                                                    &bull; Enhanced web development skills by applying semantic HTML and accessible CSS in Universal Design, studying common web security exploits &#40;SQL injection, XSS, CSRF&#41;, and integrating with database systems and APIs.
                                                                     <br></br>
-                                                                    &bull; Awards: Dean's List for 8 semesters, Engineering Scholarship Fund Recipient, CU Boulder Esteemed Scholar - Joseph A. Sewall
+                                                                    &bull; Developed multi-threaded web, proxy, and distributed file servers in C to deepen my understanding of network systems and web architecture.
                                                                     <br></br>
-                                                                    &bull; Clubs & Organizations: Tau Beta Pi, Google DSC Boulder, oSTEM
+                                                                    &bull; Studied software engineering fundamentals, including data structures, algorithms, object-oriented design, SQL database querying, computer security, AI, data science, and development methodologies.
+                                                                    <br></br>
+                                                                    &bull; Earned Dean's List recognition for 8 semesters and the CU Boulder Esteemed Scholar - Joseph A. Sewall scholarship.
+                                                                    <br></br>
+                                                                    &bull; Expanded my professional network by participating in Tau Beta Pi, Google DSC Boulder, and oSTEM. 
                                                                 </span>
                                                             }
                                                         >
@@ -129,9 +133,9 @@ export default class Resume extends Component {
                                                             tag="2018"
                                                             description={
                                                                 <span>
-                                                                    &bull; 3-week intensive study of web technologies including &#40;but not limited to&#41; HTML, CSS, JavaScript, Node.js, Jade, and MongoDB
+                                                                    &bull; Completed a 3-week intensive course in web technologies, including HTML, CSS, JavaScript, Node.js, and MongoDB.
                                                                     <br></br>
-                                                                    &bull; Ranked first among 30 classmates in collaborating on a final website project with a diverse group representing over 50 countries
+                                                                    &bull; Led front-end development for my team's final website project, which ranked 1st among a group of 30 classmates from diverse countries.
                                                                 </span>
                                                             }
                                                         >
@@ -144,19 +148,19 @@ export default class Resume extends Component {
                                                                 tag="2015 - 2019"
                                                                 description={
                                                                     <span>
-                                                                        &bull; High School Diploma with a 4.11 GPA
+                                                                        &bull; High School Diploma with a 4.11 GPA.
                                                                         <br></br>
-                                                                        &bull; Scored 1490 on the SAT
+                                                                        &bull; Scored 1490 on the SAT.
                                                                         <br></br>
-                                                                        &bull; Completed advanced coursework in Web Design and AP Computer Science
+                                                                        &bull; Completed advanced coursework in Web Design and AP Computer Science.
                                                                         <br></br>
-                                                                        &bull; Served as president of the HRHS Philanthropy Club
+                                                                        &bull; Served as president of the HRHS Philanthropy Club.
                                                                         <br></br>
-                                                                        &bull; Developed expertise in business law and marketing
+                                                                        &bull; Developed expertise in business law and marketing.
                                                                         <br></br>
-                                                                        &bull; Honed public speaking skills through various presentations and competitions
+                                                                        &bull; Honed public speaking skills through various presentations and competitions.
                                                                         <br></br>
-                                                                        &bull; Awards: 4 Academic Excellence Awards, DECA Academic Letter, National Merit Commended Scholar, DECA Buying and Merchandising Finalist, DECA State Qualifier, Outstanding Sophomore Business/Technology Student Award, Student of the Month
+                                                                        &bull; Awards: 4 Academic Excellence Awards, DECA Academic Letter, National Merit Commended Scholar, DECA Buying and Merchandising Finalist, DECA State Qualifier, Outstanding Sophomore Business/Technology Student Award, Student of the Month.
                                                                     </span>
                                                                 }
                                                             >
@@ -173,7 +177,7 @@ export default class Resume extends Component {
                                     </SingleTab>
 
                                     <SingleTab
-                                        classes="tab-pane fade"
+                                        classes="tab-pane show active fade single-tab-area"
                                         id="work"
                                         aria_labelledby="work-tab"
                                         tab_content={
@@ -190,13 +194,11 @@ export default class Resume extends Component {
                                                                 tag="2022 - Present"
                                                                 description={
                                                                     <span>
-                                                                        &bull; Developing a custom Shopify store to enhance consumer experience and boost sales
+                                                                        &bull; Developing a custom Shopify store with Lightspeed integration using Liquid and JavaScript to enhance the customer experience and boost sales.
                                                                         <br></br>
-                                                                        &bull; Managing and maintaining accurate inventory data for 2 retail shops using Lightspeed
+                                                                        &bull; Compiling sales reports in Google Sheets to support strategic decision-making.
                                                                         <br></br>
-                                                                        &bull; Creating sales reports in Google Sheets for strategic decision-making
-                                                                        <br></br>
-                                                                        &bull; Optimizing operations through the development and implementation of solutions for technician booking, system documentation, shop organization, and staff training
+                                                                        &bull; Optimizing operations for 2 retail shops by creating and implementing innovative solutions for technician booking, system documentation, shop organization, inventory management and staff training.
                                                                     </span>
                                                                 }
                                                             >
@@ -209,15 +211,11 @@ export default class Resume extends Component {
                                                                 tag="2021 - 2022"
                                                                 description={
                                                                     <span>
-                                                                        &bull; Developed features for a public-facing web user platform using JavaScript, React, Firebase, and Yarn
+                                                                        &bull; Developed features for a public-facing web platform using JavaScript, React, Firebase, and Yarn, collaborating with an international development team of 8 developers from Pakistan and Greece.
                                                                         <br></br>
-                                                                        &bull; Successfully resolved 3 pending Jira tasks within the first sprint with the development team
+                                                                        &bull; Resolved 3 pending Jira tasks during the first development sprint.
                                                                         <br></br>
-                                                                        &bull; Collaborated closely with an internal team of 8 developers from Pakistan and Greece
-                                                                        <br></br>
-                                                                        &bull; Created a movie catalog web application utilizing the IMDb API
-                                                                        <br></br>
-                                                                        &bull; Studied game theory, AI, application security, login authentication, and database technologies to broaden technical expertise
+                                                                        &bull; Broadened my technical skills by facilitating team discussions on game theory, AI, application security, login authentication, and database technologies.
                                                                     </span>
                                                                 }
                                                             > 
@@ -230,15 +228,15 @@ export default class Resume extends Component {
                                                                     tag="2021"
                                                                     description={
                                                                         <span>
-                                                                            &bull; Served food and beverages to patrons in a formal dining setting, poolside, and at club events
+                                                                            &bull; Served food and beverages to patrons in a formal dining setting, poolside, and at club events.
                                                                             <br></br>
-                                                                            &bull; Memorized 2 separate dining menus
+                                                                            &bull; Memorized 2 separate dining menus.
                                                                             <br></br>
-                                                                            &bull; Held 3 different staff positions, including server, bartender, and expo
+                                                                            &bull; Held 3 different staff positions, including server, bartender, and expo.
                                                                             <br></br>
-                                                                            &bull; Trained 3 new employees
+                                                                            &bull; Trained 3 new employees.
                                                                             <br></br>
-                                                                            &bull; Received a software development internship offer with “Swotknot” by a member of the club
+                                                                            &bull; Received a software development internship offer with “Swotknot” by a member of the club.
                                                                         </span>
                                                                     }
                                                                 >
