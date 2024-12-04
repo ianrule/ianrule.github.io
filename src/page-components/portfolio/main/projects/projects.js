@@ -59,7 +59,7 @@ export default class Projects extends Component {
                                 data_bs_target="#unpluq-modal"
                                 img_src="assets/images/projects/unpluq.png"
                                 category="WEB DEVELOPMENT"
-                                title="Unpluq Broswer Extension">
+                                title="Unpluq Browser Extension">
                             </SinglePortfolio>
                             <ProjectsModal
                                 id="unpluq-modal"
