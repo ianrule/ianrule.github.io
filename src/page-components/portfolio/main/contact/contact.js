@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import SectionTitle from '../section-components/sectiontitle';
 import ContactCard from './single-components/contactcard';
+import { PortfolioDataContext } from '../../../../services/PortfolioDataService';
 
 export default class Contact extends Component {
+    static contextType = PortfolioDataContext;
 
     constructor(props) {
         super(props);
@@ -14,6 +16,11 @@ export default class Contact extends Component {
     }
 
     render() {
+        const { portfolioData } = this.context;
+        
+        // Get the title from the first work experience entry
+        const currentJobTitle = portfolioData?.resume?.["Work Experience"]?.[0]?.title || "Unspecified Position";
+
         return (
             <section id="contactme">
                 <div className="rn-contact-area rn-section-gap section-separator" id="contacts">
@@ -33,7 +40,7 @@ export default class Contact extends Component {
                         <div className="row mt--38 mt_md--38 mt_sm--38 mt-contact-sm ml--20 mr--20">
                             <ContactCard
                                 contact_picture="assets/images/contact/contact-pic.png"
-                                title="Ecommerce & Operations Manager at Fast-Fix Denver"
+                                title={currentJobTitle}
                                 email="rule.ian@gmail.com"
                                 github_link="https://github.com/ianrule"
                                 linkedin_link="https://www.linkedin.com/in/ian-rule/"
@@ -45,5 +52,4 @@ export default class Contact extends Component {
             </section>
         );
     }
-
 }

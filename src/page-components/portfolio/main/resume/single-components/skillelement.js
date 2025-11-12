@@ -13,9 +13,18 @@ export default class SkillElement extends Component {
 
     render() {
         return (
-            <div className="skill-item">
-                <h6 className="heading heading-h6"><i data-feather="check"></i>{this.props.label}</h6>
-            </div>
+          <div className="skill-item">
+            <h6 className="heading heading-h6" style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "16px"}}>
+              { this.props.skill_icon?.toString().includes("png")
+                  ? <img src={this.props.skill_icon} alt={this.props.label + " Logo"}/> 
+                  : <span className="material-symbols-outlined"
+                          style={{fontSize: "32px", color: "var(--color-primary)"}}>
+                      {this.props.skill_icon}
+                    </span>
+              }                    
+              {this.props.label}
+            </h6>
+          </div>
         );
     }
 

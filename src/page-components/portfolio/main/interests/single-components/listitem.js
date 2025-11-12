@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Disc } from 'react-feather';
 
 export default class ListItem extends Component {
 
@@ -14,7 +15,7 @@ export default class ListItem extends Component {
     render() {
         return (
             <div className="check">
-                <p><i data-feather={this.props.data_feather}></i> {this.props.item}</p>
+                <p><Disc /> {this.props.item}</p>
             </div>
         );
     }

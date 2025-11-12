@@ -1,9 +1,12 @@
 import Portfolio from './pages/portfolio';
+import { PortfolioDataProvider } from './services/PortfolioDataService';
 
 
 function App() {
   return (
-    <Portfolio></Portfolio>
+    <PortfolioDataProvider>
+      <Portfolio></Portfolio>
+    </PortfolioDataProvider>
   );
 }
 

@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import SectionTitle from '../section-components/sectiontitle';
 import SingleService from './single-components/singleservice';
 import * as Icon from 'react-feather';
+import { PortfolioDataContext } from '../../../../services/PortfolioDataService';
 
 export default class AboutMe extends Component {
+    static contextType = PortfolioDataContext;
 
     constructor(props) {
         super(props);
@@ -15,7 +17,6 @@ export default class AboutMe extends Component {
     }
 
     expand() {
-
         // Initialize variables
         var more_content = document.getElementById("aboutMeMoreContent");
         var more_button = document.getElementById("aboutMeMoreBtn");
@@ -28,10 +29,16 @@ export default class AboutMe extends Component {
             more_content.style.display = "none";
             more_button.innerHTML = "READ MORE";
         }
-
     }
 
     render() {
+        // Get bio data from context and split it
+        const { portfolioData } = this.context;
+        const bio = portfolioData?.about?.bio || '';
+        const bioChunks = bio.split('\n\n');
+        const mainText = bioChunks[0] || '';
+        const moreContent = bioChunks.slice(1);
+
         return (
             <section id="aboutme">
                 <div className="rn-service-area rn-section-gap section-separator" id="features">
@@ -49,19 +56,33 @@ export default class AboutMe extends Component {
                                 
                                 {/* paragraph */}
                                 <p className="description mt--38">
-                                    &emsp;&emsp;Hello! I'm Ian Rule, a recent computer science graduate with a passion for front-end development, specializing in React and JavaScript. I have an extensive track record of leading projects and collaborating with diverse teams to deliver innovative solutions. Currently, I'm expanding my expertise in back-end technologies like Node.js and cloud platforms, while learning more about AI-driven software development. I am seeking a role where I can make meaningful contributions with my front-end expertise as I transition into full-stack development.
-                                    <span id="aboutMeMoreContent" style={{display: "none"}}>
-                                        <br></br>
-                                        &emsp;&emsp;Beyond my professional interests, I enjoy listening to music, focusing on personal development and mental wellness, working out, exploring the outdoors, and traveling. I am dedicated to expanding my knowledge and skill set, and I strive to leave a positive impact in everything I do.
-                                        <br></br>
-                                        &emsp;&emsp;I developed the following digital portfolio to share my background, professional accomplishments, and personal endeavors in a more organized and digestable manner. Below you will learn more about me and my experience. If you have any questions or concerns, feel free to connect with me via LinkedIn or email.
-                                    </span>
+                                    &emsp;&emsp;{mainText}
+                                    {moreContent.length > 0 && (
+                                        <span id="aboutMeMoreContent" style={{display: "none"}}>
+                                            {moreContent.map((chunk, index) => (
+                                                <React.Fragment key={index}>
+                                                    <br/>
+                                                    &emsp;&emsp;{chunk}
+                                                </React.Fragment>
+                                            ))}
+                                        </span>
+                                    )}
                                 </p>
 
-                                {/* read more button */}
-                                <div className ="mt--30" style={{textAlign: "center"}}>
-                                    <button type="button" className="rn-btn" id="aboutMeMoreBtn" style={{width: "auto"}} onClick={() => this.expand()}>READ MORE</button>
-                                </div>
+                                {/* read more button - only show if there's more content */}
+                                {moreContent.length > 0 && (
+                                    <div className="mt--30" style={{textAlign: "center"}}>
+                                        <button 
+                                            type="button" 
+                                            className="rn-btn" 
+                                            id="aboutMeMoreBtn" 
+                                            style={{width: "auto"}} 
+                                            onClick={() => this.expand()}
+                                        >
+                                            READ MORE
+                                        </button>
+                                    </div>
+                                )}
                             </div>
                         </div>
 
@@ -99,5 +120,4 @@ export default class AboutMe extends Component {
             </section>
         );
     }
-
 }

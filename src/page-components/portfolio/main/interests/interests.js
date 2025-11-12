@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import SectionTitle from '../section-components/sectiontitle';
 import HobbiesArea from './single-components/hobbiesarea';
+import { PortfolioDataContext } from '../../../../services/PortfolioDataService';
 
 export default class Interests extends Component {
+    static contextType = PortfolioDataContext;
 
     constructor(props) {
         super(props);
@@ -34,7 +36,7 @@ export default class Interests extends Component {
 
                             {/* interests */}
                             <div className="col-lg-9 col-xl-8 mt_sm--38">
-                                <HobbiesArea></HobbiesArea>
+                                <HobbiesArea interestsData={this.props.interestsData}/>
                             </div>
                         </div>
                     </div>

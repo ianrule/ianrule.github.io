@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { GitHub, Linkedin, Instagram } from 'react-feather';
 
 export default class ContactCard extends Component {
 
@@ -28,9 +29,9 @@ export default class ContactCard extends Component {
                 <div className="social-area">
                     <div className="name">CONNECT WITH ME</div>
                     <div className="social-icone">
-                        <a href={this.props.github_link} target="_blank" rel="noopener noreferrer"><i data-feather="github"></i></a>
-                        <a href={this.props.linkedin_link} target="_blank" rel="noopener noreferrer"><i data-feather="linkedin"></i></a>
-                        <a href={this.props.instagram_link} target="_blank" rel="noopener noreferrer"><i data-feather="instagram"></i></a>
+                        <a href={this.props.github_link} target="_blank" rel="noopener noreferrer"><GitHub /></a>
+                        <a href={this.props.linkedin_link} target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+                        <a href={this.props.instagram_link} target="_blank" rel="noopener noreferrer"><Instagram /></a>
                     </div>
                 </div>
             </div>

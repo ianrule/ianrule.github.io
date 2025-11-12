@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { X } from 'react-feather';
 
 export default class ProjectsModal extends Component {
 
@@ -18,7 +19,7 @@ export default class ProjectsModal extends Component {
                     <div className="modal-content">
                         <div className="modal-header">
                             <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i data-feather="x"></i></span>
+                                <span aria-hidden="true"><X /></span>
                             </button>
                         </div>
                         <div className="modal-body">

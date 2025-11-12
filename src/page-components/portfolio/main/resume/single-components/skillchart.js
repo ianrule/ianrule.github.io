@@ -13,7 +13,7 @@ export default class SkillChart extends Component {
 
     render() {
         return (
-            <div className={this.props.classes}>
+            <div className={this.props.classes} style={{width: "fit-content"}}>
                 <div className="progress-wrapper">
                     <div className="content">
                         <span className="subtitle">{this.props.subtitle}</span>
